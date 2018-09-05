@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/30.0">
+	<id>com.distriqt.test.debug</id>
+	<filename>TestAppLovin</filename>
+	<name>TestAppLovin</name>
+	<versionNumber>0.0.1</versionNumber>
+
+	<initialWindow>
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+		<autoOrients>false</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+    </initialWindow>
+
+	<icon>
+		<image16x16>icons/icon16x16.png</image16x16>
+		<image29x29>icons/icon29x29.png</image29x29>
+		<image32x32>icons/icon32x32.png</image32x32>
+		<image36x36>icons/icon36x36.png</image36x36>
+		<image48x48>icons/icon48x48.png</image48x48>
+		<image57x57>icons/icon57x57.png</image57x57>
+		<image72x72>icons/icon72x72.png</image72x72>
+		<image114x114>icons/icon114x114.png</image114x114>
+		<image128x128>icons/icon128x128.png</image128x128>
+		<image512x512>icons/icon512x512.png</image512x512>
+	</icon>
+
+	<iPhone>
+        <InfoAdditions><![CDATA[
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string>
+			</array>
+
+			<key>NSAppTransportSecurity</key>
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+                <key>NSAllowsArbitraryLoadsForMedia</key>
+                <true/>
+                <key>NSAllowsArbitraryLoadsInWebContent</key>
+                <true/>
+            </dict>
+		]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+        <Entitlements>
+            <![CDATA[
+            ]]>
+        </Entitlements>
+    </iPhone>
+    
+	<android>
+        <manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto">
+			    <uses-permission android:name="android.permission.INTERNET"/>
+                <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+			    <application>
+
+			        <!-- ADVERTS -->
+			        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+                    <activity
+                        android:name="com.google.android.gms.ads.AdActivity"
+                        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                        android:theme="@android:style/Theme.Translucent" />
+
+
+			        <!-- APPLOVIN MEDIATION -->
+			        <meta-data android:name="applovin.sdk.key"
+			                   android:value="YOUR_APPLOVIN_SDK_KEY" />
+
+			        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" android:configChanges="orientation|screenSize"/>
+                    <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" android:configChanges="orientation|screenSize"/>
+
+			    </application>
+			</manifest>
+		]]></manifestAdditions>
+    </android>
+
+    <extensions>
+        <extensionID>com.distriqt.Core</extensionID>
+        <extensionID>com.distriqt.playservices.Ads</extensionID>
+        <extensionID>com.distriqt.playservices.Base</extensionID>
+
+        <extensionID>com.distriqt.Adverts</extensionID>
+
+        <extensionID>com.distriqt.admob.AppLovin</extensionID>
+    </extensions>
+    
+</application>

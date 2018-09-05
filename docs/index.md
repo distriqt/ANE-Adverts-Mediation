@@ -1,6 +1,6 @@
-built by [distriqt //](https://airnativeextensions.com) 
 
 ![](images/hero.png)
+
 
 
 # Adverts Mediation
@@ -30,5 +30,4 @@ Latest documentation can be found in the [wiki](https://github.com/distriqt/ANE-
 
 
 ![](images/promo.png)
-
 
