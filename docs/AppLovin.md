@@ -95,6 +95,16 @@ Add the extension id to your application descriptor:
 More information on adding ANEs in this [tutorial](https://airnativeextensions.github.io/tutorials/getting-started)
 
 
+### Core ANE
+
+Note all our extensions rely on the Core ANE. Even if you are using this mediation adapter with another providers ANEs you must include the Core ANE.
+
+The Core ANE doesn't provide any functionality in itself but provides support libraries and frameworks used by our extensions. It also includes some centralised code for some common actions that can cause issues if they are implemented in each individual extension.
+
+You can access this extension here: [https://github.com/distriqt/ANE-Core](https://github.com/distriqt/ANE-Core).
+
+
+
 
 
 ## Step 4: Additional code required
