@@ -5,14 +5,14 @@
 
 # Adverts Mediation
 
-These extensions allow you to add mediation networks with advertising platforms using the Adverts ANE.
+These extensions allow you to add mediation networks with advertising platforms using the Adverts extension.
 
 Mediation is a feature that lets you serve ads to your apps from multiple sources, including the AdMob Network, third-party ad networks, and AdMob campaigns. AdMob Mediation helps maximize your fill rate and increase your monetization by sending ad requests to multiple networks to ensure you find the best available network to serve ads.
 
 This guide is your one-stop shop for integrating mediation into your AdMob app.
 
 
-They are designed to work with the distriqt [Adverts ANE](https://airnativeextensions.com/extension/com.distriqt.Adverts)
+They are designed to work with the distriqt [Adverts extension](https://airnativeextensions.com/extension/com.distriqt.Adverts)
 however should work with any recent AdMob implementation.
 
 
@@ -20,6 +20,7 @@ however should work with any recent AdMob implementation.
 ### Features:
 
 - [AppLovin](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/AppLovin)
+- [Facebook Audience Network](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/FacebookAudience)
 
 
 

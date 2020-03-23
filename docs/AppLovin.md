@@ -76,7 +76,7 @@ The `com.distriqt.admob.AppLovin` ANE includes the AppLovin SDK and the AdMob Ap
 
 To add the ANE download it from the repository and add it to your application:
 
-- [com.distriqt.admob.AppLovin.ane]()
+- [com.distriqt.admob.AppLovin.ane](https://github.com/distriqt/ANE-Adverts-Mediation/raw/master/lib/com.distriqt.admob.AppLovin.ane)
 
 Add the extension id to your application descriptor:
 
@@ -85,6 +85,12 @@ Add the extension id to your application descriptor:
     <extensionID>com.distriqt.Core</extensionID>
     <extensionID>com.distriqt.playservices.Ads</extensionID>
     <extensionID>com.distriqt.playservices.Base</extensionID>
+
+    <extensionID>androidx.appcompat</extensionID>
+    <extensionID>androidx.browser</extensionID>
+    <extensionID>androidx.core</extensionID>
+    <extensionID>androidx.vectordrawable</extensionID>
+    <extensionID>com.google.code.gson</extensionID>
 
     <extensionID>com.distriqt.Adverts</extensionID>
 

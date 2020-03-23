@@ -36,21 +36,8 @@ package
 	 */
 	public class TestAppLovin extends Sprite
 	{
-		public static var APP_KEY : String = "APPLICATION_KEY";
-		
 		public static var admob_rewardedAdUnitID:String = "";
 		public static var admob_accountId:String = "";
-		
-		/**
-		 * Class constructor 
-		 */	
-		public function TestAppLovin()
-		{
-			super();
-			create();
-			init();
-		}
-		
 		
 		//
 		//	VARIABLES
@@ -62,7 +49,19 @@ package
 		
 		//
 		//	INITIALISATION
-		//	
+		//
+		
+		
+		/**
+		 * Class constructor
+		 */
+		public function TestAppLovin()
+		{
+			super();
+			create();
+			init();
+		}
+		
 		
 		private function create( ):void
 		{
@@ -82,9 +81,6 @@ package
 		{
 			try
 			{
-				
-				Adverts.init( APP_KEY );
-				
 				message( "Adverts Supported:       " + Adverts.isSupported );
 				message( "Adverts Version:         " + Adverts.service.version );
 				message( "AppLovin Supported:      " + AdMobAppLovin.isSupported );
