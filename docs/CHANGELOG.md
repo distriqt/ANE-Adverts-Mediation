@@ -1,5 +1,15 @@
 
 
+###### 2020.04.09 [v4.1.0]
+
+```
+AppLovin update
+ - Android v9.11.2
+ - iOS v6.12.0 (resolves #9)
+Minor update to versioning (nativeVersion now correctly reports the mediator sdk version)
+```
+
+
 ###### 2020.03.23 [v4.0.0]
 
 ```

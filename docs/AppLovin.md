@@ -24,18 +24,28 @@ On the AppLovin dashboard, select **Manage Apps** under the **Monetize** section
 
 >
 > Before you can complete the AdMob mediation setup, your app needs to be registered by AppLovin. Once your app initializes the AppLovin SDK, AppLovin automatically detects and registers it. To complete this process:
+>
 > 1. Follow the steps in the Import the AppLovin SDK and adapter section. Once that's done, you'll have the AppLovin SDK integrated in your app.
-> 2. Add the following meta-data tag into your AndroidManifest.xml file under the application tag using the SDK Key obtained earlier:
+>
+> 2. **Android**: Add the following `meta-data` tag into your `manifestAdditions` in your application descriptor under the application tag using the SDK Key obtained earlier:
 > ```xml
 > <meta-data android:name="applovin.sdk.key"
 >            android:value="lJZcB...l7mHlJZ8yvFu36nGvCs3IAv" />
 > ```
-> 3. Initialize the AppLovin SDK by calling `AdMobAppLovin.service.initializeSdk();` in your application.
+>
+> 3. **iOS**: Add the following `key` to the `InfoAdditions` tag in your application descriptor using the SDK Key obtained earlier:
+> ```xml
+> <key>AppLovinSdkKey</key>
+> <string>lJZcB...l7mHlJZ8yvFu36nGvCs3IAv</string>
+> ```
+>
+> 4. Add the Initialize the AppLovin SDK by calling `AdMobAppLovin.service.initializeSdk();` in your application.
 >
 > Build and run your app, then wait thirty minutes or so. Afterwards, check the AppLovin dashboard under Monetize > Manage Apps to find your app.
 >
 > Once the registration process is complete, you can remove the `initializeSdk` call.
 >
+
 
 ### Create Zone
 
@@ -129,6 +139,15 @@ Add the following to your manifest additions inside the `application` tag, makin
 
 
 
+### iOS
+
+Add the following to your info additions, making sure you replace the value of the AppLovin SDK Key with the value from the AppLovin dashboard for your account:
+
+
+```xml
+<key>AppLovinSdkKey</key>
+<string>lJZcB...l7mHlJZ8yvFu36nGvCs3IAv</string>
+```
 
 
 

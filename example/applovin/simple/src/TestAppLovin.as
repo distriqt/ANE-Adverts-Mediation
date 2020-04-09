@@ -83,8 +83,10 @@ package
 			{
 				message( "Adverts Supported:       " + Adverts.isSupported );
 				message( "Adverts Version:         " + Adverts.service.version );
+				
 				message( "AppLovin Supported:      " + AdMobAppLovin.isSupported );
 				message( "AppLovin Version:        " + AdMobAppLovin.service.version );
+				message( "AppLovin SDK Version:    " + AdMobAppLovin.service.nativeVersion );
 				
 				message( "ADMOB Supported:         " + Adverts.service.isPlatformSupported( AdvertPlatform.PLATFORM_ADMOB ) );
 				
