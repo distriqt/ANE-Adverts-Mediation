@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/33.1">
+	<id>com.distriqt.test</id>
+	<filename>TestIronSource</filename>
+	<name>TestIronSource</name>
+	<versionNumber>0.0.1</versionNumber>
+
+    <initialWindow>
+        <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+        <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <renderMode>direct</renderMode>
+    </initialWindow>
+
+    <icon>
+        <image16x16>icons/icon16x16.png</image16x16>
+        <image29x29>icons/icon29x29.png</image29x29>
+        <image32x32>icons/icon32x32.png</image32x32>
+        <image36x36>icons/icon36x36.png</image36x36>
+        <image48x48>icons/icon48x48.png</image48x48>
+        <image57x57>icons/icon57x57.png</image57x57>
+        <image72x72>icons/icon72x72.png</image72x72>
+        <image76x76>icons/icon76x76.png</image76x76>
+        <image114x114>icons/icon114x114.png</image114x114>
+        <image120x120>icons/icon120x120.png</image120x120>
+        <image128x128>icons/icon128x128.png</image128x128>
+        <image152x152>icons/icon152x152.png</image152x152>
+        <image512x512>icons/icon512x512.png</image512x512>
+    </icon>
+
+	<iPhone>
+		<InfoAdditions><![CDATA[
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+			</array>
+
+			<key>MinimumOSVersion</key>
+			<string>9.0</string>
+
+			<key>GADApplicationIdentifier</key>
+			<string>ca-app-pub-3940256099942544~1458002511</string>
+
+			<key>NSAppTransportSecurity</key>
+			<dict>
+				<key>NSAllowsArbitraryLoads</key>
+	  			<true/>
+			</dict>
+			
+		]]></InfoAdditions>
+		<requestedDisplayResolution>high</requestedDisplayResolution>
+		<Entitlements>
+			<![CDATA[
+			]]>
+		</Entitlements>
+	</iPhone>
+	
+	<android>
+		<manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto" >
+				<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="28" />
+
+				<uses-permission android:name="android.permission.INTERNET"/>
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+				<application android:hardwareAccelerated="true">
+
+				    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+                    <!-- ADVERTS -->
+                    <meta-data
+                        android:name="com.google.android.gms.ads.APPLICATION_ID"
+                        android:value="ca-app-pub-4920614350579341~9792560518"/>
+
+					<activity
+						android:name="com.google.android.gms.ads.AdActivity"
+						android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+						android:theme="@android:style/Theme.Translucent" />
+
+                    <provider
+                        android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+                        android:authorities="air.com.distriqt.test.debug.mobileadsinitprovider"
+                        android:exported="false"
+                        android:initOrder="100" />
+
+
+
+                    <!-- IRONSOURCE -->
+                    <activity
+                        android:name="com.ironsource.sdk.controller.ControllerActivity"
+                        android:configChanges="orientation|screenSize"
+                        android:hardwareAccelerated="true" />
+                    <activity
+                        android:name="com.ironsource.sdk.controller.InterstitialActivity"
+                        android:configChanges="orientation|screenSize"
+                        android:hardwareAccelerated="true"
+                        android:theme="@android:style/Theme.Translucent" />
+                    <activity
+                        android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+                        android:configChanges="orientation|screenSize"
+                        android:hardwareAccelerated="true"
+                        android:theme="@android:style/Theme.Translucent" />
+
+				</application>
+
+			</manifest>
+		]]></manifestAdditions>
+	</android>
+	
+	<extensions>
+        <extensionID>com.distriqt.Core</extensionID>
+        <extensionID>com.distriqt.playservices.Ads</extensionID>
+        <extensionID>com.distriqt.playservices.Base</extensionID>
+
+        <extensionID>androidx.multidex</extensionID>
+        <extensionID>androidx.appcompat</extensionID>
+        <extensionID>androidx.browser</extensionID>
+        <extensionID>androidx.core</extensionID>
+        <extensionID>androidx.vectordrawable</extensionID>
+        <extensionID>androidx.constraintlayout</extensionID>
+        <extensionID>com.google.code.gson</extensionID>
+
+        <extensionID>com.distriqt.Adverts</extensionID>
+
+        <extensionID>com.distriqt.admob.IronSource</extensionID>
+	</extensions>
+	
+</application>

@@ -15,6 +15,7 @@
  */
 package
 {
+	import com.distriqt.extension.admob.facebookaudience.AdMobFacebookAudience;
 	import com.distriqt.extension.adverts.AdvertPlatform;
 	import com.distriqt.extension.adverts.AdvertisingIdInfo;
 	import com.distriqt.extension.adverts.Adverts;
@@ -88,8 +89,8 @@ package
 			{
 				message( "Adverts Supported:          " + Adverts.isSupported );
 				message( "Adverts Version:            " + Adverts.service.version );
-//				message( "FacebookAudience Supported: " + AdMobFacebookAudience.isSupported );
-//				message( "FacebookAudience Version:   " + AdMobFacebookAudience.service.version );
+				message( "Adverts Native Version:     " + Adverts.service.nativeVersion );
+				message( "FacebookAudience Version:   " + AdMobFacebookAudience.service.nativeVersion );
 				
 				message( "ADMOB Supported:            " + Adverts.service.isPlatformSupported( AdvertPlatform.PLATFORM_ADMOB ) );
 				
@@ -186,9 +187,8 @@ package
 							_adView = Adverts.service.rewardedVideoAds.createRewardedVideoAd();
 							_adView.addEventListener( RewardedVideoAdEvent.LOADED, adverts_receivedAdHandler );
 							_adView.addEventListener( RewardedVideoAdEvent.ERROR, adverts_errorHandler );
-							
-							_adView.load( admob_rewardedAdUnitID,
-										  new AdRequestBuilder()
+							_adView.setAdUnitId( admob_rewardedAdUnitID );
+							_adView.load( new AdRequestBuilder()
 												  .addTestDevice( test_id )
 												  .build()
 							);

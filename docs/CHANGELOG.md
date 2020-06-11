@@ -1,5 +1,16 @@
 
 
+###### 2020.06.11 [v4.2.0]
+
+```
+Updated to support latest Adverts release
+IronSource v6.16.0 mediation adapter integration (resolves #10)
+Facebook Audience update
+  - iOS v5.9.0
+  - Android v5.9.0
+```
+
+
 ###### 2020.04.09 [v4.1.0]
 
 ```

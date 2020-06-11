@@ -43,6 +43,7 @@ Add the extension id to your application descriptor:
     <extensionID>androidx.browser</extensionID>
     <extensionID>androidx.core</extensionID>
     <extensionID>androidx.vectordrawable</extensionID>
+    <extensionID>androidx.constraintlayout</extensionID>
     <extensionID>com.google.code.gson</extensionID>
 
     <extensionID>com.distriqt.Adverts</extensionID>
@@ -102,7 +103,7 @@ Add the following to your manifest additions inside the `application` tag. You m
 
 Add the `Frameworks` folder to your application package, ensuring the dynamic `FBAudienceNetwork.framework` is included along with the swift libraries (`dylib` files).
 
-You will need to resign your application following the guide below otherwise your build will likely fail signing validation.
+**You will need to resign your application following the guide below otherwise your build will likely fail signing validation.**
 
 
 

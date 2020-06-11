@@ -9,11 +9,11 @@
 # The path to the ipa generated from your AIR application packaging
 IPA="/path/to/yourApp.ipa"
 
-# The distribution provisioning profile for your application
+# The provisioning profile for your application
 PROVISIONING_PROFILE="/path/to/profile.mobileprovision"
 
 # The name of the signing identity. You get this by running the following in a terminal 
-# and selecting the name of your distribution certificate:
+# and selecting the name of your certificate:
 # 
 # security find-identity -v -p codesigning
 SIGNING_IDENTITY="iPhone Distribution: XXXXXXXXX (XXXXX)"
@@ -44,12 +44,11 @@ APP_NAME=$(ls -1 $WORKING_DIR/Payload)
 #####################################
 echo "Create Signing Entitlements"
 ENTITLEMENTS="$OUTPUT/Entitlements.plist"
+rm -f "$ENTITLEMENTS" 
 WORKING_PROFILE_PLIST="$OUTPUT/$WORKING_PROFILE.plist"
 security cms -D -i "$WORKING_PROFILE" > "$WORKING_PROFILE_PLIST"
 
 
-# /usr/libexec/PlistBuddy  -x -c 'Print :Entitlements' "$WORKING_PROFILE_PLIST" > "$ENTITLEMENTS"
-    
 TEAM_IDENTIFIER=$(/usr/libexec/Plistbuddy -c "Print :TeamIdentifier:0" "$WORKING_PROFILE_PLIST")
 APPLICATION_IDENTIFIER_PREFIX=$(/usr/libexec/Plistbuddy -c "Print :ApplicationIdentifierPrefix:0" "$WORKING_PROFILE_PLIST")
 BUNDLE_IDENTIFIER=$(/usr/libexec/Plistbuddy -c "Print :CFBundleIdentifier" "$WORKING_DIR/Payload/$APP_NAME/Info.plist")
@@ -70,12 +69,16 @@ echo "\tPROVISIONING_GET_TASK_ALLOW = $PROVISIONING_GET_TASK_ALLOW"
 /usr/libexec/PlistBuddy -c "Add :get-task-allow bool $PROVISIONING_GET_TASK_ALLOW" "$ENTITLEMENTS"
 /usr/libexec/PlistBuddy -c "Add :keychain-access-groups array" "$ENTITLEMENTS"
 /usr/libexec/PlistBuddy -c "Add :keychain-access-groups:0 string $APPLICATION_IDENTIFIER_PREFIX.$BUNDLE_IDENTIFIER" "$ENTITLEMENTS"
-/usr/libexec/PlistBuddy -c "Add :aps-environment string $APS_ENVIRONMENT" "$ENTITLEMENTS"
-# /usr/libexec/PlistBuddy -c "Add :beta-reports-active bool $BETA_REPORTS" "$ENTITLEMENTS"
-
+if [ $APS_ENVIRONMENT ]; then
+    echo "Setting aps-environment=$APS_ENVIRONMENT" 
+    /usr/libexec/PlistBuddy -c "Add :aps-environment string $APS_ENVIRONMENT" "$ENTITLEMENTS"
+fi
+if [ $BETA_REPORTS ]; then
+    echo "Setting beta-reports-active=$BETA_REPORTS" 
+    /usr/libexec/PlistBuddy -c "Add :beta-reports-active bool $BETA_REPORTS" "$ENTITLEMENTS"
+fi
 cp "$ENTITLEMENTS" "$WORKING_DIR/Payload/$APP_NAME/archived-expanded-entitlements.xcent"
 
-cat "$WORKING_DIR/Payload/$APP_NAME/archived-expanded-entitlements.xcent"
 
 #####################################
 echo "Sign Frameworks" 
@@ -107,3 +110,5 @@ rm -Rf "$WORKING_DIR"
 rm -f "$ENTITLEMENTS" 
 rm -f "$WORKING_PROFILE_PLIST"
 rm -f "$WORKING_PROFILE"
+
+# ideviceinstaller -i "$OUTPUT_IPA"

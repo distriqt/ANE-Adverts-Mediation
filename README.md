@@ -11,7 +11,6 @@ Mediation is a feature that lets you serve ads to your apps from multiple source
 
 This guide is your one-stop shop for integrating mediation into your AdMob app.
 
-
 They are designed to work with the distriqt [Adverts ANE](https://airnativeextensions.com/extension/com.distriqt.Adverts)
 however should work with any recent AdMob implementation.
 
@@ -19,7 +18,11 @@ however should work with any recent AdMob implementation.
 
 ### Features:
 
-- [AppLovin](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/AppLovin)
+
+- AdMob Mediation
+    - [App Lovin](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/AppLovin)
+    - [Facebook Audience](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/FacebookAudience)
+    - [IronSource](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/IronSource)
 
 
 

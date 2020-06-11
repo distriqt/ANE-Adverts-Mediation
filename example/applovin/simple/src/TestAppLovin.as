@@ -161,9 +161,9 @@ package
 							_adView = Adverts.service.rewardedVideoAds.createRewardedVideoAd();
 							_adView.addEventListener( RewardedVideoAdEvent.LOADED, adverts_receivedAdHandler );
 							_adView.addEventListener( RewardedVideoAdEvent.ERROR, adverts_errorHandler );
+							_adView.setAdUnitId( admob_rewardedAdUnitID );
 							
-							_adView.load( admob_rewardedAdUnitID,
-									new AdRequestBuilder()
+							_adView.load( new AdRequestBuilder()
 //											.addTestDevice( "F1C0AFEFF151A60B62C089B377FFC555" )
 											.build()
 							);
