@@ -23,6 +23,7 @@ however should work with any recent AdMob implementation.
     - [App Lovin](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/AppLovin)
     - [Facebook Audience](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/FacebookAudience)
     - [IronSource](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/IronSource)
+    - [Unity Ads](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/UnityAds)
 
 
 
