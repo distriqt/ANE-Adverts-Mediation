@@ -1,5 +1,12 @@
 
 
+###### 2020.11.04 [v5.0.1]
+
+```
+Corrected audience_network.dex file for Facebook Audience mediator (resolves #218)
+```
+
+
 ###### 2020.10.14 [v5.0.0]
 
 ```
