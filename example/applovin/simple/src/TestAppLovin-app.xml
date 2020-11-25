@@ -45,6 +45,9 @@
             <key>GADApplicationIdentifier</key>
             <string>ca-app-pub-AAAAAAAAAAAAAAAA~XXXXXXXXXX</string>
 
+            <key>UILaunchStoryboardName</key>
+            <string>LaunchScreen</string>
+
 		]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
         <Entitlements>
@@ -83,12 +86,42 @@
 
 
 			        <!-- APPLOVIN MEDIATION -->
-			        <meta-data android:name="applovin.sdk.key"
-			                   android:value="7_XdsOLUFwg14rJDtp2CT1uvT1uRGHfOHB07aMcqHIsL7AZ-zcAVd3OB5HcLZHlrTmz26atOtkk-uIzrv8LXCl" />
+                    <activity
+                        android:name="com.applovin.adview.AppLovinInterstitialActivity"
+                        android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|uiMode"
+                        android:hardwareAccelerated="true"
+                        android:screenOrientation="behind" />
+                    <activity
+                        android:name="com.applovin.adview.AppLovinFullscreenActivity"
+                        android:configChanges="keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+                        android:exported="false"
+                        android:hardwareAccelerated="true"
+                        android:launchMode="singleTop"
+                        android:screenOrientation="behind" />
+                    <activity
+                        android:name="com.applovin.sdk.AppLovinWebViewActivity"
+                        android:configChanges="keyboardHidden|orientation|screenSize|uiMode" />
+                    <activity
+                        android:name="com.applovin.mediation.MaxDebuggerActivity"
+                        android:configChanges="keyboardHidden|orientation|screenSize"
+                        android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" />
+                    <activity
+                        android:name="com.applovin.mediation.MaxDebuggerDetailActivity"
+                        android:configChanges="keyboardHidden|orientation|screenSize"
+                        android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" />
+                    <activity
+                        android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity"
+                        android:configChanges="keyboardHidden|orientation|screenSize"
+                        android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" />
 
-			        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" android:configChanges="orientation|screenSize"/>
-                    <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" android:configChanges="orientation|screenSize"/>
-
+                    <service
+                        android:name="com.applovin.impl.sdk.utils.AppKilledService"
+                        android:exported="false"
+                        android:stopWithTask="false" />
+                    <service
+                        android:name="com.applovin.impl.adview.activity.FullscreenAdService"
+                        android:exported="false"
+                        android:stopWithTask="false" />
 			    </application>
 			</manifest>
 		]]></manifestAdditions>
@@ -97,6 +130,7 @@
     <extensions>
         <extensionID>com.distriqt.Core</extensionID>
         <extensionID>com.distriqt.playservices.Ads</extensionID>
+        <extensionID>com.distriqt.playservices.AdsIdentifier</extensionID>
         <extensionID>com.distriqt.playservices.Base</extensionID>
 
         <extensionID>androidx.multidex</extensionID>

@@ -1,5 +1,16 @@
 
 
+###### 2020.11.25 [v5.1.0]
+
+```
+Updated to support latest Adverts release
+AppLovin update (resolves #20, resolves #21)
+ - Android v9.14.6
+ - iOS v6.14.8
+Deprecated wiki
+```
+
+
 ###### 2020.11.04 [v5.0.1]
 
 ```

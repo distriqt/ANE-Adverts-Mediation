@@ -95,7 +95,8 @@ package
 					if (Adverts.service.isPlatformSupported( AdvertPlatform.PLATFORM_ADMOB ))
 					{
 						message( "Initialising ADMOB" );
-						Adverts.service.initialisePlatform( AdvertPlatform.PLATFORM_ADMOB, admob_accountId );
+						Adverts.service.setup( AdvertPlatform.PLATFORM_ADMOB );
+						Adverts.service.initialise();
 					}
 					else
 					{
