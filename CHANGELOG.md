@@ -1,5 +1,12 @@
 
 
+###### 2021.02.08 [v5.2.0]
+
+```
+Updated to support latest Admob mediation adapters (resolves #25)
+```
+
+
 ###### 2020.11.25 [v5.1.0]
 
 ```

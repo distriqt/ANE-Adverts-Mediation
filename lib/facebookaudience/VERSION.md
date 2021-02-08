@@ -1,1 +1,1 @@
-| com.distriqt.admob.FacebookAudience | 6.1.010 | 6.1.0 | 6.0.0 |
+| com.distriqt.admob.FacebookAudience | 6.2.001 | 6.2.0 | 6.2.1 |
