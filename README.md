@@ -20,16 +20,17 @@ however should work with any recent AdMob implementation.
 
 
 - AdMob Mediation
-    - [App Lovin](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/AppLovin)
-    - [Facebook Audience](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/FacebookAudience)
-    - [IronSource](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/IronSource)
-    - [Unity Ads](https://github.com/distriqt/ANE-Adverts-Mediation/wiki/UnityAds)
+    - [App Lovin](https://docs.airnativeextensions.com/docs/adverts/mediation/applovin)
+    - [Facebook Audience](https://docs.airnativeextensions.com/docs/adverts/mediation/facebookaudience)
+    - [IronSource](https://docs.airnativeextensions.com/docs/adverts/mediation/ironsource)
+    - [TapJoy](https://docs.airnativeextensions.com/docs/adverts/mediation/tapjoy)
+    - [Unity Ads](https://docs.airnativeextensions.com/docs/adverts/mediation/unityads)
 
 
 
 ## Documentation
 
-Latest documentation can be found in the [wiki](https://github.com/distriqt/ANE-Adverts-Mediation/wiki)
+Latest documentation can be found in the [documentation site](https://docs.airnativeextensions.com/docs/adverts)
 
 
 
