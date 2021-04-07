@@ -1,5 +1,13 @@
 
 
+###### 2021.04.07 [v5.3.1]
+
+```
+Corrected issue in tap joy platform definition (resolves #27)
+Reduced number of linker options and removed iOS minimum version
+```
+
+
 ###### 2021.03.07 [v5.3.0]
 
 ```
