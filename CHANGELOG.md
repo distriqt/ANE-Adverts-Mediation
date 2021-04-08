@@ -1,5 +1,12 @@
 
 
+###### 2021.04.08 [v5.4.0]
+
+```
+Added AdColony mediation extension
+```
+
+
 ###### 2021.04.07 [v5.3.1]
 
 ```

@@ -1,1 +1,1 @@
-| com.distriqt.admob.IronSource | 7.1.005 | 7.1.0.1 | 7.1.0 |
+| com.distriqt.admob.IronSource | 7.1.006 | 7.1.0.1 | 7.1.0 |
