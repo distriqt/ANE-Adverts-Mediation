@@ -1,24 +1,20 @@
 /**
- *        __       __               __ 
+ *        __       __               __
  *   ____/ /_ ____/ /______ _ ___  / /_
  *  / __  / / ___/ __/ ___/ / __ `/ __/
- * / /_/ / (__  ) / / /  / / /_/ / / 
- * \__,_/_/____/_/ /_/  /_/\__, /_/ 
- *                           / / 
- *                           \/ 
+ * / /_/ / (__  ) / / /  / / /_/ / /
+ * \__,_/_/____/_/ /_/  /_/\__, /_/
+ *                           / /
+ *                           \/
  * http://distriqt.com
  */
 package
 {
 	import com.distriqt.extension.admob.applovin.AdMobAppLovin;
-	import com.distriqt.extension.adverts.AdSize;
-	import com.distriqt.extension.adverts.AdView;
-	import com.distriqt.extension.adverts.AdViewParams;
 	import com.distriqt.extension.adverts.AdvertPlatform;
 	import com.distriqt.extension.adverts.Adverts;
 	import com.distriqt.extension.adverts.builders.AdRequestBuilder;
-	import com.distriqt.extension.adverts.builders.AdViewParamsBuilder;
-	import com.distriqt.extension.adverts.events.AdViewEvent;
+	import com.distriqt.extension.adverts.events.FullScreenContentEvent;
 	import com.distriqt.extension.adverts.events.RewardedVideoAdEvent;
 	import com.distriqt.extension.adverts.rewarded.RewardedVideoAd;
 	
@@ -31,7 +27,7 @@ package
 	import flash.text.TextFormat;
 	
 	
-	/**	
+	/**
 	 * Sample application for using the AdMob AppLovin Mediation Native Extension
 	 */
 	public class TestAppLovin extends Sprite
@@ -43,8 +39,8 @@ package
 		//	VARIABLES
 		//
 		
-		private var _adUnitId	: String;
-		private var _text		: TextField;
+		private var _adUnitId:String;
+		private var _text:TextField;
 		
 		
 		//
@@ -63,7 +59,7 @@ package
 		}
 		
 		
-		private function create( ):void
+		private function create():void
 		{
 			stage.align = StageAlign.TOP_LEFT;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
@@ -71,13 +67,13 @@ package
 			_text = new TextField();
 			_text.defaultTextFormat = new TextFormat( "_typewriter", 18, 0x000000 );
 			addChild( _text );
-
+			
 			stage.addEventListener( Event.RESIZE, stage_resizeHandler, false, 0, true );
 			stage.addEventListener( MouseEvent.CLICK, stage_clickHandler, false, 0, true );
 		}
 		
 		
-		private function init( ):void
+		private function init():void
 		{
 			try
 			{
@@ -119,7 +115,7 @@ package
 			}
 			catch (e:Error)
 			{
-				message( "ERROR::"+e.message );
+				message( "ERROR::" + e.message );
 			}
 		}
 		
@@ -131,7 +127,7 @@ package
 		private function message( str:String ):void
 		{
 			trace( str );
-			_text.appendText(str+"\n");
+			_text.appendText( str + "\n" );
 		}
 		
 		
@@ -141,13 +137,15 @@ package
 		
 		private function stage_resizeHandler( event:Event ):void
 		{
-			_text.width  = stage.stageWidth;
+			_text.width = stage.stageWidth;
 			_text.height = stage.stageHeight - 100;
 		}
 		
 		
 		private var _stage:int = 0;
 		private var _adView:RewardedVideoAd;
+		
+		
 		private function stage_clickHandler( event:MouseEvent ):void
 		{
 			if (Adverts.isSupported && Adverts.service.rewardedVideoAds.isSupported)
@@ -165,8 +163,8 @@ package
 							_adView.setAdUnitId( admob_rewardedAdUnitID );
 							
 							_adView.load( new AdRequestBuilder()
-//											.addTestDevice( "F1C0AFEFF151A60B62C089B377FFC555" )
-											.build()
+												  //											.addTestDevice( "F1C0AFEFF151A60B62C089B377FFC555" )
+												  .build()
 							);
 							break;
 						}
@@ -176,10 +174,9 @@ package
 							message( "show" );
 							if (_adView.isLoaded())
 							{
-								_adView.addEventListener( RewardedVideoAdEvent.OPENED, openedHandler );
-								_adView.addEventListener( RewardedVideoAdEvent.VIDEO_STARTED, videoStartedHandler );
-								_adView.addEventListener( RewardedVideoAdEvent.LEFT_APPLICATION, leftApplicationHandler );
-								_adView.addEventListener( RewardedVideoAdEvent.CLOSED, closedHandler );
+								_adView.addEventListener( FullScreenContentEvent.SHOW, showHandler );
+								_adView.addEventListener( FullScreenContentEvent.FAILED_TO_SHOW, failedToShowHandler );
+								_adView.addEventListener( FullScreenContentEvent.DISMISSED, dismissedHandler );
 								
 								_adView.show();
 							}
@@ -193,10 +190,9 @@ package
 						case 2:
 						{
 							message( "destroy" );
-							_adView.removeEventListener( RewardedVideoAdEvent.OPENED, openedHandler );
-							_adView.removeEventListener( RewardedVideoAdEvent.VIDEO_STARTED, videoStartedHandler );
-							_adView.removeEventListener( RewardedVideoAdEvent.LEFT_APPLICATION, leftApplicationHandler );
-							_adView.removeEventListener( RewardedVideoAdEvent.CLOSED, closedHandler );
+							_adView.removeEventListener( FullScreenContentEvent.SHOW, showHandler );
+							_adView.removeEventListener( FullScreenContentEvent.FAILED_TO_SHOW, failedToShowHandler );
+							_adView.removeEventListener( FullScreenContentEvent.DISMISSED, dismissedHandler );
 							
 							_adView.removeEventListener( RewardedVideoAdEvent.LOADED, adverts_receivedAdHandler );
 							_adView.removeEventListener( RewardedVideoAdEvent.ERROR, adverts_errorHandler );
@@ -220,7 +216,6 @@ package
 		}
 		
 		
-		
 		//
 		//	EXTENSION LISTENERS
 		//
@@ -230,37 +225,31 @@ package
 			message( "adverts_receivedAdHandler" );
 		}
 		
+		
 		private function adverts_errorHandler( event:RewardedVideoAdEvent ):void
 		{
 			message( "adverts_errorHandler:: " + event.errorCode );
 		}
 		
 		
-		
-		private function openedHandler( event:RewardedVideoAdEvent ):void
+		private function showHandler( event:FullScreenContentEvent ):void
 		{
 			// The rewarded video ad has been opened and is now visible to the user
-			message( "openedHandler" );
+			message( "showHandler" );
 		}
 		
-		private function videoStartedHandler( event:RewardedVideoAdEvent ):void
+		
+		private function failedToShowHandler( event:FullScreenContentEvent ):void
 		{
-			// Video playback has started
-			message( "videoStartedHandler" );
+			message( "failedToShowHandler" );
 		}
 		
-		private function leftApplicationHandler( event:RewardedVideoAdEvent ):void
-		{
-			// Control has left your application,
-			// you can deactivate any none important parts of your application
-			message( "leftApplicationHandler" );
-		}
 		
-		private function closedHandler( event:RewardedVideoAdEvent ):void
+		private function dismissedHandler( event:FullScreenContentEvent ):void
 		{
 			// Control has returned to your application
 			// you should reactivate any paused / stopped parts of your application.
-			message( "closedHandler" );
+			message( "dismissedHandler" );
 		}
 		
 		

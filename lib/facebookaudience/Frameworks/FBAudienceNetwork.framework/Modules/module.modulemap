@@ -36,7 +36,6 @@ framework module FBAudienceNetwork {
     header "FBAdSDKNotificationManager.h"
     header "FBAdSettings.h"
     header "FBAdView.h"
-    header "FBInstreamAdView.h"
     header "FBInterstitialAd.h"
     header "FBMediaView.h"
     header "FBNativeAd.h"

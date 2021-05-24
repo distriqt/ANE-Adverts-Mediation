@@ -1,5 +1,12 @@
 
 
+###### 2021.05.24 [v6.0.0]
+
+```
+Updated to latest AdMob mediation adapters to bring inline with v13 of the Adverts extension
+```
+
+
 ###### 2021.04.08 [v5.4.0]
 
 ```

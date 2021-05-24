@@ -1,1 +1,1 @@
-| com.distriqt.admob.UnityAds | 3.6.006 | 3.6.0 | 3.6.0 |
+| com.distriqt.admob.UnityAds | 3.7.002 | 3.6.2 | 3.7.1 |

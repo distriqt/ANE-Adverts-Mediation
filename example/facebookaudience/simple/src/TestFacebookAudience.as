@@ -21,6 +21,7 @@ package
 	import com.distriqt.extension.adverts.Adverts;
 	import com.distriqt.extension.adverts.builders.AdRequestBuilder;
 	import com.distriqt.extension.adverts.events.ConsentEvent;
+	import com.distriqt.extension.adverts.events.FullScreenContentEvent;
 	import com.distriqt.extension.adverts.events.RewardedVideoAdEvent;
 	import com.distriqt.extension.adverts.rewarded.RewardedVideoAd;
 	
@@ -99,7 +100,8 @@ package
 					if (Adverts.service.isPlatformSupported( AdvertPlatform.PLATFORM_ADMOB ))
 					{
 						message( "Initialising ADMOB" );
-						Adverts.service.initialisePlatform( AdvertPlatform.PLATFORM_ADMOB, admob_accountId );
+						Adverts.service.setup( AdvertPlatform.PLATFORM_ADMOB );
+						Adverts.service.initialise();
 					}
 					else
 					{
@@ -200,10 +202,9 @@ package
 							message( "show" );
 							if (_adView.isLoaded())
 							{
-								_adView.addEventListener( RewardedVideoAdEvent.OPENED, openedHandler );
-								_adView.addEventListener( RewardedVideoAdEvent.VIDEO_STARTED, videoStartedHandler );
-								_adView.addEventListener( RewardedVideoAdEvent.LEFT_APPLICATION, leftApplicationHandler );
-								_adView.addEventListener( RewardedVideoAdEvent.CLOSED, closedHandler );
+								_adView.addEventListener( FullScreenContentEvent.SHOW, showHandler );
+								_adView.addEventListener( FullScreenContentEvent.FAILED_TO_SHOW, failedToShowHandler );
+								_adView.addEventListener( FullScreenContentEvent.DISMISSED, dismissedHandler );
 								
 								_adView.show();
 							}
@@ -217,10 +218,9 @@ package
 						case 2:
 						{
 							message( "destroy" );
-							_adView.removeEventListener( RewardedVideoAdEvent.OPENED, openedHandler );
-							_adView.removeEventListener( RewardedVideoAdEvent.VIDEO_STARTED, videoStartedHandler );
-							_adView.removeEventListener( RewardedVideoAdEvent.LEFT_APPLICATION, leftApplicationHandler );
-							_adView.removeEventListener( RewardedVideoAdEvent.CLOSED, closedHandler );
+							_adView.removeEventListener( FullScreenContentEvent.SHOW, showHandler );
+							_adView.removeEventListener( FullScreenContentEvent.FAILED_TO_SHOW, failedToShowHandler );
+							_adView.removeEventListener( FullScreenContentEvent.DISMISSED, dismissedHandler );
 							
 							_adView.removeEventListener( RewardedVideoAdEvent.LOADED, adverts_receivedAdHandler );
 							_adView.removeEventListener( RewardedVideoAdEvent.ERROR, adverts_errorHandler );
@@ -265,37 +265,31 @@ package
 			message( "adverts_receivedAdHandler" );
 		}
 		
+		
 		private function adverts_errorHandler( event:RewardedVideoAdEvent ):void
 		{
 			message( "adverts_errorHandler:: " + event.errorCode );
 		}
 		
 		
-		
-		private function openedHandler( event:RewardedVideoAdEvent ):void
+		private function showHandler( event:FullScreenContentEvent ):void
 		{
 			// The rewarded video ad has been opened and is now visible to the user
-			message( "openedHandler" );
+			message( "showHandler" );
 		}
 		
-		private function videoStartedHandler( event:RewardedVideoAdEvent ):void
+		
+		private function failedToShowHandler( event:FullScreenContentEvent ):void
 		{
-			// Video playback has started
-			message( "videoStartedHandler" );
+			message( "failedToShowHandler" );
 		}
 		
-		private function leftApplicationHandler( event:RewardedVideoAdEvent ):void
-		{
-			// Control has left your application,
-			// you can deactivate any none important parts of your application
-			message( "leftApplicationHandler" );
-		}
 		
-		private function closedHandler( event:RewardedVideoAdEvent ):void
+		private function dismissedHandler( event:FullScreenContentEvent ):void
 		{
 			// Control has returned to your application
 			// you should reactivate any paused / stopped parts of your application.
-			message( "closedHandler" );
+			message( "dismissedHandler" );
 		}
 		
 		

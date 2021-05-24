@@ -90,6 +90,8 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBAudienceNetworkAds : NSOb
 + (void)initializeWithSettings:(nullable FBAdInitSettings *)settings
              completionHandler:(nullable void (^)(FBAdInitResults *results))completionHandler;
 
++ (void)handleDeeplink:(NSURL *)deeplink;
+
 @end
 
 NS_ASSUME_NONNULL_END

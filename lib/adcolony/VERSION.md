@@ -1,1 +1,1 @@
-| com.distriqt.admob.AdColony | 4.0.007 | 4.4.1 | 4.5.0 |
+| com.distriqt.admob.AdColony | 4.0.013 | 4.5.0 | 4.6.0 |

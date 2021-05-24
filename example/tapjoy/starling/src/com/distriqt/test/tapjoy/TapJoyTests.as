@@ -57,6 +57,7 @@ package com.distriqt.test.tapjoy
 				if (TapJoy.isSupported)
 				{
 					log( "TapJoy Version:   " + TapJoy.service.version );
+					log( "TapJoy SDK Version:   " + TapJoy.service.nativeVersion );
 				}
 				
 			}

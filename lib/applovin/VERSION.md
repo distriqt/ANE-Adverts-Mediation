@@ -1,1 +1,1 @@
-| com.distriqt.admob.AppLovin | 4.0.011 | 9.14.12 | 6.15.1 |
+| com.distriqt.admob.AppLovin | 4.0.015 | 10.1.2 | 10.2.1 |
