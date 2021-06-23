@@ -1,5 +1,13 @@
 
 
+###### 2021.06.23 [v6.1.0]
+
+```
+Facebook Audience Android update v6.5.0 (#31)
+IronSource Android update v7.1.6 (#30, #29)
+```
+
+
 ###### 2021.05.24 [v6.0.0]
 
 ```
