@@ -1,3 +1,14 @@
+###### 2021.08.31 [v6.2.0]
+
+```
+AdColony: Added airpackage, Updated SDK android v4.5.0 ios v4.7.0
+AppLovin: Added airpackage, Updated SDK android v10.3.2 ios v10.3.4
+Facebook: Added airpackage, Updated SDK android v6.5.1 ios v6.5.1
+IronSource: Added airpackage, Updated SDK android v7.1.8 ios v7.1.8
+TapJoy: Added airpackage, Updated SDK android v12.8.1 ios v12.8.1
+UnityAds: Added airpackage, Updated SDK android v3.7.5 ios v3.7.5
+```
+
 
 
 ###### 2021.06.23 [v6.1.0]

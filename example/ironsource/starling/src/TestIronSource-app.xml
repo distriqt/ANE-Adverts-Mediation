@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/33.1">
-	<id>com.distriqt.test</id>
-	<filename>TestIronSource</filename>
-	<name>TestIronSource</name>
-	<versionNumber>0.0.1</versionNumber>
+    <id>com.distriqt.test</id>
+    <filename>TestIronSource</filename>
+    <name>TestIronSource</name>
+    <versionNumber>0.0.1</versionNumber>
 
     <initialWindow>
         <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
@@ -29,62 +29,45 @@
         <image512x512>icons/icon512x512.png</image512x512>
     </icon>
 
-	<iPhone>
-		<InfoAdditions><![CDATA[
-			<key>UIDeviceFamily</key>
-			<array>
-				<string>1</string>
-				<string>2</string>
-			</array>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
 
-			<key>GADApplicationIdentifier</key>
-			<string>ca-app-pub-3940256099942544~1458002511</string>
+            <key>GADApplicationIdentifier</key>
+            <string>ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXXX</string>
 
-			<key>NSAppTransportSecurity</key>
-			<dict>
-				<key>NSAllowsArbitraryLoads</key>
-	  			<true/>
-			</dict>
+            <key>NSAppTransportSecurity</key>
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+            </dict>
 
             <key>UILaunchStoryboardName</key>
             <string>LaunchScreen</string>
-			
-		]]></InfoAdditions>
-		<requestedDisplayResolution>high</requestedDisplayResolution>
-		<Entitlements>
-			<![CDATA[
-			]]>
-		</Entitlements>
-	</iPhone>
-	
-	<android>
-		<manifestAdditions><![CDATA[
-			<manifest android:installLocation="auto" >
-				<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="28" />
 
-				<uses-permission android:name="android.permission.INTERNET"/>
-				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        ]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+        <Entitlements>
+            <![CDATA[
+            ]]>
+        </Entitlements>
+    </iPhone>
 
-				<application android:hardwareAccelerated="true">
+    <android>
+        <manifestAdditions><![CDATA[
+            <manifest android:installLocation="auto" >
+                <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="30" />
 
-				    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+                <uses-permission android:name="android.permission.INTERNET"/>
+                <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-                    <!-- ADVERTS -->
-                    <meta-data
-                        android:name="com.google.android.gms.ads.APPLICATION_ID"
-                        android:value="ca-app-pub-4920614350579341~9792560518"/>
+                <application android:hardwareAccelerated="true">
 
-					<activity
-						android:name="com.google.android.gms.ads.AdActivity"
-						android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-						android:theme="@android:style/Theme.Translucent" />
-
-                    <provider
-                        android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-                        android:authorities="air.com.distriqt.test.debug.mobileadsinitprovider"
-                        android:exported="false"
-                        android:initOrder="100" />
-
+                    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
 
 
                     <!-- IRONSOURCE -->
@@ -103,28 +86,152 @@
                         android:hardwareAccelerated="true"
                         android:theme="@android:style/Theme.Translucent" />
 
-				</application>
+                    <provider
+                        android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"
+                        android:authorities="air.com.distriqt.test.IronsourceLifecycleProvider" />
 
-			</manifest>
-		]]></manifestAdditions>
-	</android>
-	
-	<extensions>
+
+
+                    <!-- ADVERTS -->
+                    <meta-data
+                        android:name="com.google.android.gms.ads.APPLICATION_ID"
+                        android:value="ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXXX"/>
+
+                    <activity
+                        android:name="com.google.android.gms.ads.AdActivity"
+                        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                        android:exported="false"
+                        android:theme="@android:style/Theme.Translucent" />
+
+                    <provider
+                        android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+                        android:authorities="air.com.distriqt.test.debug.mobileadsinitprovider"
+                        android:exported="false"
+                        android:initOrder="100" />
+
+                    <service
+                        android:name="com.google.android.gms.ads.AdService"
+                        android:enabled="true"
+                        android:exported="false" />
+
+                    <meta-data
+                        android:name="com.google.android.gms.version"
+                        android:value="@integer/google_play_services_version" />
+
+                    <provider
+                        android:name="androidx.work.impl.WorkManagerInitializer"
+                        android:authorities="air.com.distriqt.test.debug.workmanager-init"
+                        android:directBootAware="false"
+                        android:exported="false"
+                        android:multiprocess="true" />
+
+                    <service
+                        android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+                        android:directBootAware="false"
+                        android:enabled="@bool/enable_system_alarm_service_default"
+                        android:exported="false" />
+                    <service
+                        android:name="androidx.work.impl.background.systemjob.SystemJobService"
+                        android:directBootAware="false"
+                        android:enabled="@bool/enable_system_job_service_default"
+                        android:exported="true"
+                        android:permission="android.permission.BIND_JOB_SERVICE" />
+
+                    <receiver
+                        android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+                        android:directBootAware="false"
+                        android:enabled="true"
+                        android:exported="false" />
+                    <receiver
+                        android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+                        android:directBootAware="false"
+                        android:enabled="false"
+                        android:exported="false" >
+                        <intent-filter>
+                            <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                            <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                        </intent-filter>
+                    </receiver>
+                    <receiver
+                        android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+                        android:directBootAware="false"
+                        android:enabled="false"
+                        android:exported="false" >
+                        <intent-filter>
+                            <action android:name="android.intent.action.BATTERY_OKAY" />
+                            <action android:name="android.intent.action.BATTERY_LOW" />
+                        </intent-filter>
+                    </receiver>
+                    <receiver
+                        android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+                        android:directBootAware="false"
+                        android:enabled="false"
+                        android:exported="false" >
+                        <intent-filter>
+                            <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                            <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+                        </intent-filter>
+                    </receiver>
+                    <receiver
+                        android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+                        android:directBootAware="false"
+                        android:enabled="false"
+                        android:exported="false" >
+                        <intent-filter>
+                            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                        </intent-filter>
+                    </receiver>
+                    <receiver
+                        android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+                        android:directBootAware="false"
+                        android:enabled="false"
+                        android:exported="false" >
+                        <intent-filter>
+                            <action android:name="android.intent.action.BOOT_COMPLETED" />
+                            <action android:name="android.intent.action.TIME_SET" />
+                            <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                        </intent-filter>
+                    </receiver>
+                    <receiver
+                        android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+                        android:directBootAware="false"
+                        android:enabled="@bool/enable_system_alarm_service_default"
+                        android:exported="false" >
+                        <intent-filter>
+                            <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+                        </intent-filter>
+                    </receiver>
+
+                    <service
+                        android:name="androidx.room.MultiInstanceInvalidationService"
+                        android:exported="false" />
+
+
+
+                </application>
+
+            </manifest>
+        ]]></manifestAdditions>
+    </android>
+
+    <extensions>
+        <extensionID>com.distriqt.Adverts</extensionID>
         <extensionID>com.distriqt.Core</extensionID>
-        <extensionID>com.distriqt.playservices.Ads</extensionID>
-        <extensionID>com.distriqt.playservices.Base</extensionID>
 
-        <extensionID>androidx.multidex</extensionID>
+        <extensionID>com.distriqt.playservices.Base</extensionID>
+        <extensionID>com.distriqt.playservices.Ads</extensionID>
+        <extensionID>com.distriqt.playservices.AdsIdentifier</extensionID>
+
         <extensionID>androidx.appcompat</extensionID>
         <extensionID>androidx.browser</extensionID>
         <extensionID>androidx.core</extensionID>
-        <extensionID>androidx.vectordrawable</extensionID>
         <extensionID>androidx.constraintlayout</extensionID>
+        <extensionID>androidx.vectordrawable</extensionID>
+        <extensionID>androidx.room</extensionID>
+        <extensionID>androidx.work</extensionID>
         <extensionID>com.google.code.gson</extensionID>
 
-        <extensionID>com.distriqt.Adverts</extensionID>
-
         <extensionID>com.distriqt.admob.IronSource</extensionID>
-	</extensions>
-	
+    </extensions>
+
 </application>

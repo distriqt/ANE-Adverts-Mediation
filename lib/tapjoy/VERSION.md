@@ -1,1 +1,1 @@
-| com.distriqt.admob.TapJoy | 12.8.002 | 12.8.0 | 12.8.0 |
+| com.distriqt.admob.TapJoy | 12.8.106 | 12.8.1 | 12.8.1 |
