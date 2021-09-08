@@ -1,6 +1,12 @@
 ###### 2021.09.08 [v6.2.1]
 
 ```
+Updated docs
+```
+
+###### 2021.09.08 [v6.2.1]
+
+```
 Updated Facebook Audience to v6.6.0
 ```
 
