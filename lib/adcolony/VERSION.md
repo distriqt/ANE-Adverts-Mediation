@@ -1,1 +1,5 @@
-| com.distriqt.admob.AdColony | 4.5.3 | 4.5.0 | 4.7.0 |
+## Version Details
+
+| Extension | Version | Android Lib | iOS Lib |
+| --- | --- | --- | --- |
+| com.distriqt.admob.AdColony | 4.5.4 | 4.5.0 | 4.7.0 |
