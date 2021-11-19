@@ -4,6 +4,8 @@
 Correct issue with unity ads mediator missing adaptor aar (resolves #35)
 ```
 
+
+
 ###### 2021.09.08 [v6.2.1]
 
 ```
