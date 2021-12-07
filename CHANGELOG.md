@@ -1,3 +1,9 @@
+###### 2021.12.07 [v6.2.3]
+
+```
+Update air package documentation and config descriptions
+```
+
 ###### 2021.11.19 [v6.2.2]
 
 ```
