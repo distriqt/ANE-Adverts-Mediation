@@ -1,3 +1,9 @@
+###### 2022.03.08 [v6.3.0]
+
+```
+Update mediation adapters for compatibility with Adverts v13.5.0
+```
+
 ###### 2021.12.07 [v6.2.3]
 
 ```
@@ -64,6 +70,20 @@ Added AdColony mediation extension
 ```
 Corrected issue in tap joy platform definition (resolves #27)
 Reduced number of linker options and removed iOS minimum version
+```
+
+
+###### 2021.03.07 [v5.3.0]
+
+```
+Added TapJoy mediation (resolves #26)
+```
+
+
+###### 2021.02.08 [v5.2.0]
+
+```
+Updated to support latest Admob mediation adapters (resolves #25)
 ```
 
 

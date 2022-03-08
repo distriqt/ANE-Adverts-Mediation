@@ -2,4 +2,4 @@
 
 | Extension | Version | Android Lib | iOS Lib |
 | --- | --- | --- | --- |
-| com.distriqt.admob.FacebookAudience | 6.6.2 | 6.6.0 | 6.6.0 |
+| com.distriqt.admob.FacebookAudience | 6.8.0 | 6.8.0 | 6.8.0 |
