@@ -1,3 +1,9 @@
+###### 2022.03.25 [v6.3.1]
+
+```
+Correct missing dynamic frameworks for Facebook Audience mediation (resolves #39)
+```
+
 ###### 2022.03.08 [v6.3.0]
 
 ```

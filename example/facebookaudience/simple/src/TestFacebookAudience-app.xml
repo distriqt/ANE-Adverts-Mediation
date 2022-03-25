@@ -114,8 +114,9 @@
 
 					<!-- ADVERTS -->
 					<service android:name="androidx.room.MultiInstanceInvalidationService" android:directBootAware="true" android:exported="false"/>
-					<provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:authorities="air.com.distriqt.test.debug.lifecycle-process" android:exported="false" android:multiprocess="true"/>
-					<provider android:name="androidx.startup.InitializationProvider" android:authorities="air.com.distriqt.test.debug.androidx-startup" android:exported="false"/>
+					<provider android:name="androidx.startup.InitializationProvider" android:authorities="air.com.distriqt.test.debug.androidx-startup" android:exported="false">
+						<meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+					</provider>
 					<!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
 					<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:theme="@android:style/Theme.Translucent"/>
 					<provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:authorities="air.com.distriqt.test.debug.mobileadsinitprovider" android:exported="false" android:initOrder="100"/>
