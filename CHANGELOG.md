@@ -1,3 +1,15 @@
+###### 2022.06.24 [v6.4.0]
+
+```
+feat(update): update compatibility with latest Adverts extension
+feat(unityads): update unityads sdk: android v4.2.1, ios v4.1.0
+feat(tapjoy): update tapjoy sdk: android v12.10.0, ios v12.9.1
+feat(ironsource): update ironsource sdk: android v7.2.2, ios v7.2.1.2
+feat(facebookaudience): update fb audience sdk: android v6.11.0, ios v6.9.0.1
+feat(applovin): update applovin sdk: android v11.4.3, ios v11.3.2
+feat(adcolony): update adcolony sdk: android v4.8.0, ios v4.8.0
+```
+
 ###### 2022.03.25 [v6.3.1]
 
 ```
