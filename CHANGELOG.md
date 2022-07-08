@@ -1,3 +1,9 @@
+###### 2022.07.08 [v6.4.1]
+
+```
+fix(all): correct package assets such as audience_network.dex (resolves #46)
+```
+
 ###### 2022.06.24 [v6.4.0]
 
 ```
