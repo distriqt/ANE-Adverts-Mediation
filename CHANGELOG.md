@@ -1,3 +1,10 @@
+###### 2022.07.20 [v6.4.2]
+
+```
+fix(build): build with AIR 33.1.1.856 due to issue with SWC generation in 889
+feat(assets): restructure assets and frameworks to include ios simulator
+```
+
 ###### 2022.07.08 [v6.4.1]
 
 ```
