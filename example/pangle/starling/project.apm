@@ -1,0 +1,46 @@
+{
+    "identifier": "com.distriqt.test",
+    "name": "TestPangle",
+    "filename": "TestPangle",
+    "version": "0.0.1",
+    "versionLabel": "",
+    "dependencies": [
+        {
+            "version": "4.7.0",
+            "id": "com.distriqt.admob.Pangle",
+            "source": "file"
+        },
+        {
+            "version": "13.7.5",
+            "id": "com.distriqt.Adverts"
+        }
+    ],
+    "configuration": {
+        "adMobAndroidApplicationId": {
+            "name": "adMobAndroidApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-XXXXXXXXXXXXXXX~YYYYYYYYYY"
+        },
+        "adMobIOSApplicationId": {
+            "name": "adMobIOSApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-XXXXXXXXXXXXXXX~YYYYYYYYYY"
+        }
+    },
+    "buildTypes": {
+        "android": {
+            "identifier": "com.distriqt.test.debug",
+            "configuration": {
+                "adMobAndroidApplicationId": "ca-app-pub-4920614350579341~9792560518"
+            }
+        },
+        "ios": {
+            "identifier": "com.distriqt.test",
+            "configuration": {
+                "adMobIOSApplicationId": "ca-app-pub-3940256099942544~1458002511"
+            }
+        }
+    },
+    "repositories": [],
+    "deployOptions": {}
+}

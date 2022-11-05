@@ -24,6 +24,7 @@ however should work with any recent AdMob implementation.
     - [App Lovin](https://docs.airnativeextensions.com/docs/adverts/mediation/applovin)
     - [Facebook Audience](https://docs.airnativeextensions.com/docs/adverts/mediation/facebookaudience)
     - [IronSource](https://docs.airnativeextensions.com/docs/adverts/mediation/ironsource)
+    - [Pangle](https://docs.airnativeextensions.com/docs/adverts/mediation/pangle)
     - [TapJoy](https://docs.airnativeextensions.com/docs/adverts/mediation/tapjoy)
     - [Unity Ads](https://docs.airnativeextensions.com/docs/adverts/mediation/unityads)
 

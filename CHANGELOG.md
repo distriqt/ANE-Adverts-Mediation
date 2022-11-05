@@ -1,3 +1,11 @@
+###### 2022.11.05 [v6.5.0]
+
+```
+feat(pangle): add pangle mediation network (resolves #44)
+feat(docs): update pangle docs
+fix(adcolony): correct dependencies of airpackage and update docs
+```
+
 ###### 2022.07.20 [v6.4.2]
 
 ```

@@ -1,0 +1,1 @@
+This extension is too large for github, you will find it in the releases or use apm to install it. 
