@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -32,7 +32,9 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBAdChoicesView : UIView
 @property (nonatomic, assign, readonly, getter=isExpandable) BOOL expandable;
 
 /**
-  The native ad that provides AdChoices info, such as the image url, and click url. Setting this updates the nativeAd.
+  The native ad that provides AdChoices info, such as the image url, and click url. Setting this property updates the
+  nativeAd.
+
  */
 @property (nonatomic, weak, readwrite, nullable) FBNativeAdBase *nativeAd;
 
@@ -52,30 +54,32 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBAdChoicesView : UIView
 @property (nonatomic, weak, readwrite, null_resettable) UIViewController *rootViewController;
 
 /**
- The tag for AdChoices view. It always returns FBNativeAdViewTagChoicesIcon.
+ The tag for AdChoices view. Value of this property is always equal to FBNativeAdViewTagChoicesIcon.
  */
 @property (nonatomic, assign, readonly) FBNativeAdViewTag nativeAdViewTag;
 
 /**
-  Initialize this view with a given native ad. Configuration is pulled from the native ad.
+ Initializes this view with a given native ad. Configuration is pulled from the provided native ad.
 
- @param nativeAd The native ad to initialize with.
+
+ @param nativeAd The native ad to initialize with
  */
 - (instancetype)initWithNativeAd:(FBNativeAdBase *)nativeAd;
 
 /**
-  Initialize this view with a given native ad. Configuration is pulled from the native ad.
+ Initializes this view with a given native ad. Configuration is pulled from the provided native ad.
 
- @param nativeAd The native ad to initialize with.
- @param expandable Controls whether view defaults to expanded or not, see property documentation
+
+ @param nativeAd The native ad to initialize with
+ @param expandable Controls whether view defaults to expanded or not, see ``expandable`` property documentation
  */
 - (instancetype)initWithNativeAd:(FBNativeAdBase *)nativeAd expandable:(BOOL)expandable;
 
 /**
- Initialize this view with a given native ad. Configuration is pulled from the native ad.
+ Initializes this view with a given native ad. Configuration is pulled from the native ad.
 
- @param nativeAd The native ad to initialize with.
- @param expandable Controls whether view defaults to expanded or not, see property documentation
+ @param nativeAd The native ad to initialize with
+ @param expandable Controls whether view defaults to expanded or not, see ``expandable`` property documentation
  @param attributes Attributes to configure look and feel.
  */
 - (instancetype)initWithNativeAd:(FBNativeAdBase *)nativeAd
@@ -83,21 +87,25 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBAdChoicesView : UIView
                       attributes:(nullable FBNativeAdViewAttributes *)attributes;
 
 /**
-  Using the superview, this updates the frame of this view, positioning the icon in the top right corner by default.
+ This method updates the frame of this view using the superview, positioning the icon in the top right corner by
+ default.
+
  */
 - (void)updateFrameFromSuperview;
 
 /**
-  Using the superview, this updates the frame of this view, positioning the icon in the corner specified.
+ This method updates the frame of this view using the superview, positioning the icon in the corner specified.
  UIRectCornerAllCorners not supported.
+
 
  @param corner The corner to display this view from.
  */
 - (void)updateFrameFromSuperview:(UIRectCorner)corner;
 
 /**
-  Using the superview, this updates the frame of this view, positioning the icon in the corner specified.
- UIRectCornerAllCorners not supported.
+ This method updates the frame of this view using the superview, positioning the icon in the corner specified with
+ provided insets. UIRectCornerAllCorners not supported.
+
 
  @param corner The corner to display this view from.
  @param insets Insets to take into account when positioning the view. Only respective insets are applied to corners.

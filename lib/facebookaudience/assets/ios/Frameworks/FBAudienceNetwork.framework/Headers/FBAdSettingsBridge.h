@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 /***
  * This is a bridge file for Audience Network Unity SDK.
@@ -11,6 +11,7 @@
  ***/
 
 #import <FBAudienceNetwork/FBAdBridgeCommon.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 /***
  * This is a bridge file for Audience Network Unity SDK.
@@ -22,7 +22,9 @@ typedef void (*FBAdBridgeErrorCallback)(uint32_t uniqueId, char const *error);
 
 @property (nonatomic, assign) int32_t uniqueId;
 
-// Explicitly remove callbacks
+/**
+ This method explicitly removes added callbacks. When the instance is deallocated, it is called automatically by SDK
+ */
 - (void)dispose;
 
 @end

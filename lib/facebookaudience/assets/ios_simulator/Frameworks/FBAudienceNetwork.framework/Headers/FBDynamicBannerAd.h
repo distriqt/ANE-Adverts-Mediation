@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <Foundation/Foundation.h>
 
@@ -6,46 +6,51 @@
 #import <FBAudienceNetwork/FBAdDefines.h>
 #import <FBAudienceNetwork/FBAdExtraHint.h>
 #import <FBAudienceNetwork/FBAdView.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol FBDynamicBannerAdDelegate;
 
 /**
-  A modal view controller to represent a Facebook dynamic banner ad. This
+ A modal view controller to represent a Facebook dynamic banner ad. This
  is a full-screen ad shown in your application.
  */
 FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObject
 
 /**
-  Typed access to the id of the ad placement.
+ Typed access to the id of the ad placement.
  */
 @property (nonatomic, copy, readonly) NSString *placementID;
 /**
-  The delegate.
+ The delegate.
  */
 @property (nonatomic, weak, nullable) id<FBDynamicBannerAdDelegate> delegate;
 /**
- FBAdExtraHint to provide extra info
+ FBAdExtraHint to provide extra info. Note: FBAdExtraHint is deprecated in AudienceNetwork. See FBAdExtraHint for more
+ details
+
  */
 @property (nonatomic, strong, nullable) FBAdExtraHint *extraHint;
 
 /**
-  This is a method to initialize an FBDynamicBannerAd matching the given placement id.
+ This is a method to initialize an FBDynamicBannerAd matching the given placement id.
+
 
  @param placementID The id of the ad placement. You can create your placement id from Facebook developers page.
  */
 - (instancetype)initWithPlacementID:(NSString *)placementID;
 
 /**
-  This is a method to update the placement id of an FBDynamicBannerAd.
+ This is a method to update the placement id of an FBDynamicBannerAd.
+
 
  @param placementID The id of the ad placement. You can create your placement id from Facebook developers page.
  */
 - (void)updatePlacementID:(NSString *)placementID;
 
 /**
-  Returns true if the dynamic banner ad has been successfully loaded.
+ Returns true if the dynamic banner ad has been successfully loaded.
 
 
  You should check `isAdValid` before trying to show the ad.
@@ -53,13 +58,16 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObjec
 @property (nonatomic, getter=isAdValid, readonly) BOOL adValid;
 
 /**
-  Begins loading the FBDynamicBannerAd content.
+ Begins loading the FBDynamicBannerAd content.
 
 
  You can implement `dynamicBannerAdDidLoad:` and `dynamicBannerAd:didFailWithError:` methods
  of `FBDynamicBannerAdDelegate` if you would like to be notified as loading succeeds or fails.
  */
-- (void)loadAd;
+- (void)loadAd FB_DEPRECATED_WITH_MESSAGE(
+    "This method will be removed in future version. Use -loadAdWithBidPayload instead."
+    "See https://www.facebook.com/audiencenetwork/resources/blog/bidding-moves-from-priority-to-imperative-for-app-monetization"
+    "for more details.");
 
 /**
  Begins loading the FBDynamicBannerAd content from a bid payload attained through a server side bid.
@@ -67,6 +75,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObjec
 
  You can implement `adViewDidLoad:` and `adView:didFailWithError:` methods
  of `FBAdViewDelegate` if you would like to be notified as loading succeeds or fails.
+
 
  @param bidPayload The payload of the ad bid. You can get your bid id from Facebook bidder endpoint.
  */
@@ -90,12 +99,12 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObjec
 - (void)setVisibility:(BOOL)visible;
 
 /**
- This function removes the dynamic banner from the view. It should be called before removing its last strong reference.
+ This method removes the dynamic banner from the view. It should be called before removing its last strong reference.
  */
 - (void)removeAd;
 
 /**
-    This function handles frame issues occuring when the view is layed out. It should be called on the lifecycle event
+ This function handles frame issues occuring when the view is layed out. It should be called on the lifecycle event
  'viewDidLayoutSubviews'.
  @param rootViewController The view controller that will be used to present the dynamic banner ad.
  */
@@ -104,7 +113,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObjec
 @end
 
 /**
-  The methods declared by the FBDynamicBannerAdDelegate protocol allow the adopting delegate to respond
+ The methods declared by the FBDynamicBannerAdDelegate protocol allow the adopting delegate to respond
  to messages from the FBDynamicBannerAd class and thus respond to operations such as whether the
  dynamic banner ad has been loaded, user has clicked or closed the dynamic banner.
  */
@@ -113,22 +122,25 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObjec
 @optional
 
 /**
-  Sent after an ad in the FBDynamicBannerAd object is clicked. The appropriate app store view or
+ Sent after an ad in the FBDynamicBannerAd object is clicked. The appropriate app store view or
  app browser will be launched.
+
 
  @param dynamicBannerAd An FBDynamicBannerAd object sending the message.
  */
 - (void)dynamicBannerAdDidClick:(FBDynamicBannerAd *)dynamicBannerAd;
 
 /**
-  Sent when an FBDynamicBannerAd successfully loads an ad.
+ Sent when an FBDynamicBannerAd successfully loads an ad.
+
 
  @param dynamicBannerAd An FBDynamicBannerAd object sending the message.
  */
 - (void)dynamicBannerAdDidLoad:(FBDynamicBannerAd *)dynamicBannerAd;
 
 /**
-  Sent when an FBDynamicBannerAd failes to load an ad.
+ Sent when an FBDynamicBannerAd failes to load an ad.
+
 
  @param dynamicBannerAd An FBDynamicBannerAd object sending the message.
  @param error An error object containing details of the error.
@@ -136,14 +148,16 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObjec
 - (void)dynamicBannerAd:(FBDynamicBannerAd *)dynamicBannerAd didFailWithError:(NSError *)error;
 
 /**
-  Sent immediately before the impression of an FBDynamicBannerAd object will be logged.
+ Sent immediately before the impression of an FBDynamicBannerAd object will be logged.
+
 
  @param dynamicBannerAd An FBDynamicBannerAd object sending the message.
  */
 - (void)dynamicBannerAdWillLogImpression:(FBDynamicBannerAd *)dynamicBannerAd;
 
 /**
-  Sent when an FBDynamicBannerAd failes to load a fullscreen view of an ad.
+ Sent when an FBDynamicBannerAd failes to load a fullscreen view of an ad.
+
 
  @param dynamicBannerAd An FBDynamicBannerAd object sending the message.
  @param error An error object containing details of the error.
@@ -152,12 +166,12 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBDynamicBannerAd : NSObjec
 
 /**
  When an ad is clicked, the modal view will be presented. And when the user finishes the
-interaction with the modal view and dismiss it, this message will be sent, returning control
-to the application.
+ interaction with the modal view and dismiss it, this message will be sent, returning control
+ to the application.
+
 
  @param dynamicBannerAd An FBDynamicBannerAd object sending the message.
  */
-
 - (void)dynamicBannerAdDidFinishHandlingClick:(FBDynamicBannerAd *)dynamicBannerAd;
 
 @end

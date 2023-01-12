@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -122,7 +122,9 @@ typedef NS_ENUM(NSInteger, FBNativeAdsCachePolicy) {
 
 @property (nonatomic, getter=isRegistered, readonly) BOOL registered;
 /**
- FBAdExtraHint to provide extra info
+ FBAdExtraHint to provide extra info. Note: FBAdExtraHint is deprecated in AudienceNetwork. See FBAdExtraHint for more
+ details
+
  */
 @property (nonatomic, strong, nullable) FBAdExtraHint *extraHint;
 /**
@@ -136,7 +138,10 @@ typedef NS_ENUM(NSInteger, FBNativeAdsCachePolicy) {
  You can implement `nativeAdDidLoad:` and `nativeAd:didFailWithError:` methods
  of `FBNativeAdDelegate` if you would like to be notified as loading succeeds or fails.
  */
-- (void)loadAd;
+- (void)loadAd FB_DEPRECATED_WITH_MESSAGE(
+    "This method will be removed in future version. Use -loadAdWithBidPayload instead."
+    "See https://www.facebook.com/audiencenetwork/resources/blog/bidding-moves-from-priority-to-imperative-for-app-monetization"
+    "for more details.");
 
 /**
  Begins loading the FBNativeAd content.
@@ -149,7 +154,12 @@ typedef NS_ENUM(NSInteger, FBNativeAdsCachePolicy) {
  media for the ad is visible on screen (Video or Image for FBNativeAd / Icon for FBNativeBannerAd) and setting this to
  anything else than FBNativeAdsCachePolicyAll will delay the impression call.
  */
-- (void)loadAdWithMediaCachePolicy:(FBNativeAdsCachePolicy)mediaCachePolicy;
+- (void)loadAdWithMediaCachePolicy:(FBNativeAdsCachePolicy)mediaCachePolicy
+    FB_DEPRECATED_WITH_MESSAGE(
+        "This method will be removed in future version. Use -loadAdWithBidPayload:mediaCachePolicy: instead."
+        "See https://www.facebook.com/audiencenetwork/resources/blog/bidding-moves-from-priority-to-imperative-for-app-monetization"
+        "for more details.");
+;
 
 /**
  Begins loading the FBNativeAd content from a bid payload attained through a server side bid.

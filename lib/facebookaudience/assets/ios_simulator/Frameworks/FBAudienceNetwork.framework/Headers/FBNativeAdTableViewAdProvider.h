@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -11,34 +11,38 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
-  Additional functionality on top of FBNativeAdsManager to assist in using native ads within a UITableView. This class
-  contains a mechanism to map indexPaths to native ads in a stable manner as well as helpers which assist in doing the
-  math to include ads at a regular interval within a table view.
+ Additional functionality on top of FBNativeAdsManager to assist in using native ads within a UITableView. This class
+ contains a mechanism to map indexPaths to native ads in a stable manner as well as helpers which assist in doing the
+ math to include ads at a regular interval within a table view.
  */
 FB_CLASS_EXPORT
 @interface FBNativeAdTableViewAdProvider : NSObject
 
 /**
-  Passes delegate methods from FBNativeAd. Separate delegate calls will be made for each native ad contained.
+ Passes delegate methods from FBNativeAd. Separate delegate calls will be made for each native ad contained.
  */
 @property (nonatomic, weak, nullable) id<FBNativeAdDelegate> delegate;
 
 /**
- FBAdExtraHint to provide extra info
+ FBAdExtraHint to provide extra info. Note: FBAdExtraHint is deprecated in AudienceNetwork. See FBAdExtraHint for more
+ details
+
  */
 @property (nonatomic, strong, nullable) FBAdExtraHint *extraHint;
 
 /**
-  Create a FBNativeAdTableViewAdProvider.
+ Initializes a FBNativeAdTableViewAdProvider.
+
 
  @param manager The FBNativeAdsManager which is consumed by this class.
  */
 - (instancetype)initWithManager:(FBNativeAdsManager *)manager NS_DESIGNATED_INITIALIZER;
 
 /**
-  Retrieve a native ad for an indexPath, will return the same ad for a given indexPath until the native ads manager is
+ Retrieves a native ad for an indexPath, will return the same ad for a given indexPath until the native ads manager is
  refreshed. This method is intended for usage with a table view and specifically the caller is recommended to wait until
  tableView:cellForRowAtIndexPath: to ensure getting the best native ad for the given table cell.
+
 
  @param tableView The tableView where native ad will be used
  @param indexPath The indexPath to use as a key for this native ad
@@ -47,7 +51,8 @@ FB_CLASS_EXPORT
 - (FBNativeAd *)tableView:(UITableView *)tableView nativeAdForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 /**
-  Support for evenly distributed native ads within a table view. Computes whether this cell is an ad or not.
+ Support for evenly distributed native ads within a table view. Computes whether this cell is an ad or not.
+
 
  @param indexPath The indexPath of the cell within the table view
  @param stride The frequency that native ads are to appear within the table view
@@ -56,8 +61,9 @@ FB_CLASS_EXPORT
 - (BOOL)isAdCellAtIndexPath:(NSIndexPath *)indexPath forStride:(NSUInteger)stride;
 
 /**
-  Support for evenly distributed native ads within a table view. Adjusts a non-ad cell indexPath to the indexPath it
+ Support for evenly distributed native ads within a table view. Adjusts a non-ad cell indexPath to the indexPath it
  would be in a collection with no ads.
+
 
  @param indexPath The indexPath to of the non-ad cell
  @param stride The frequency that native ads are to appear within the table view
@@ -66,8 +72,9 @@ FB_CLASS_EXPORT
 - (nullable NSIndexPath *)adjustNonAdCellIndexPath:(NSIndexPath *)indexPath forStride:(NSUInteger)stride;
 
 /**
-  Support for evenly distributed native ads within a table view. Adjusts the total count of cells within the table view
+ Support for evenly distributed native ads within a table view. Adjusts the total count of cells within the table view
  to account for the ad cells.
+
 
  @param count The count of cells in the table view not including ads
  @param stride The frequency that native ads are to appear within the table view

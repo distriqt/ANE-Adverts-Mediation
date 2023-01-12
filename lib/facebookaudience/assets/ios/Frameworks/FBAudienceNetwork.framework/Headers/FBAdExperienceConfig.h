@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <Foundation/Foundation.h>
 
@@ -13,7 +13,7 @@ extern FBAdExperienceType const FBAdExperienceTypeRewardedInterstitial;
 
 FB_CLASS_EXPORT
 /**
- FBAdExperienceConfig is class designed to add some configuration to ad experience
+ FBAdExperienceConfig is a class used to add configurations to thead experience
  */
 @interface FBAdExperienceConfig : NSObject <NSCopying>
 

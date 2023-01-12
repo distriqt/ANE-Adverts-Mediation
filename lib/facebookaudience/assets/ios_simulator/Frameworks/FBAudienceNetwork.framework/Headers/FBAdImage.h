@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -26,7 +26,7 @@ FB_CLASS_EXPORT
 @property (nonatomic, assign, readonly) NSInteger height;
 
 /**
- This is a method to initialize an FBAdImage.
+ Initializes FBAdImage instance with given parameters.
 
  @param url the image url.
  @param width the image width.
@@ -37,7 +37,7 @@ FB_CLASS_EXPORT
 /**
  Loads an image from self.url over the network, or returns the cached image immediately.
 
- @param block Block to handle the loaded image.
+ @param block Block that is calledn upon completion of image loading
  */
 - (void)loadImageAsyncWithBlock:(nullable void (^)(UIImage *__nullable image))block;
 

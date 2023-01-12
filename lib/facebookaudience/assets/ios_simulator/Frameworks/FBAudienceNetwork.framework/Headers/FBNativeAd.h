@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The FBNativeAd represents ad metadata to allow you to construct custom ad views.
-  See the AdUnitsSample in the sample apps section of the Audience Network framework.
+ See the AdUnitsSample in the sample apps section of the Audience Network framework.
  */
 FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeAd : FBNativeAdBase
 
@@ -26,6 +26,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeAd : FBNativeAdBase
 
 /**
  This is a method to associate a FBNativeAd with the UIView you will use to display the native ads.
+
 
  @param view The UIView you created to render all the native ads data elements.
  @param mediaView The FBMediaView you created to render the media (cover image / video / carousel)
@@ -43,6 +44,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeAd : FBNativeAdBase
  This is a method to associate FBNativeAd with the UIView you will use to display the native ads
  and set clickable areas.
 
+
  @param view The UIView you created to render all the native ads data elements.
  @param mediaView The FBMediaView you created to render the media (cover image / video / carousel)
  @param iconView The FBMediaView you created to render the icon
@@ -59,6 +61,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeAd : FBNativeAdBase
 
 /**
  This is a method to associate a FBNativeAd with the UIView you will use to display the native ads.
+
 
  @param view The UIView you created to render all the native ads data elements.
  @param mediaView The FBMediaView you created to render the media (cover image / video / carousel)
@@ -76,6 +79,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeAd : FBNativeAdBase
  This is a method to associate FBNativeAd with the UIView you will use to display the native ads
  and set clickable areas.
 
+
  @param view The UIView you created to render all the native ads data elements.
  @param mediaView The FBMediaView you created to render the media (cover image / video / carousel)
  @param iconImageView The UIImageView you created to render the icon. Image will be set
@@ -91,15 +95,15 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeAd : FBNativeAdBase
                     clickableViews:(nullable NSArray<UIView *> *)clickableViews;
 
 /**
- This is a method to use to download all media for the ad (adChoicesIcon, icon, image, video).
- This is only needed to be called if the mediaCachePolicy is set to FBNativeAdsCachePolicyNone.
+ This method downloads all media for the ad (adChoicesIcon, icon, image, video).
+ It should be called only when mediaCachePolicy is set to FBNativeAdsCachePolicyNone.
  */
 - (void)downloadMedia;
 
 @end
 
 /**
-  The methods declared by the FBNativeAdDelegate protocol allow the adopting delegate to respond to messages
+ The methods declared by the FBNativeAdDelegate protocol allow the adopting delegate to respond to messages
  from the FBNativeAd class and thus respond to operations such as whether the native ad has been loaded.
  */
 @protocol FBNativeAdDelegate <NSObject>
@@ -107,45 +111,50 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeAd : FBNativeAdBase
 @optional
 
 /**
-  Sent when an FBNativeAd has been successfully loaded.
+ Sent when a FBNativeAd has been successfully loaded.
 
- @param nativeAd An FBNativeAd object sending the message.
+
+ @param nativeAd A FBNativeAd object sending the message.
  */
 - (void)nativeAdDidLoad:(FBNativeAd *)nativeAd;
 
 /**
- Sent when an FBNativeAd has succesfully downloaded all media
+ Sent when a FBNativeAd has succesfully downloaded all media
  */
 - (void)nativeAdDidDownloadMedia:(FBNativeAd *)nativeAd;
 
 /**
-  Sent immediately before the impression of an FBNativeAd object will be logged.
+ Sent immediately before the impression of a FBNativeAd object will be logged.
 
- @param nativeAd An FBNativeAd object sending the message.
+
+ @param nativeAd A FBNativeAd object sending the message.
  */
 - (void)nativeAdWillLogImpression:(FBNativeAd *)nativeAd;
 
 /**
-  Sent when an FBNativeAd is failed to load.
+ Sent when a FBNativeAd is failed to load.
 
- @param nativeAd An FBNativeAd object sending the message.
+
+ @param nativeAd A FBNativeAd object sending the message.
  @param error An error object containing details of the error.
  */
 - (void)nativeAd:(FBNativeAd *)nativeAd didFailWithError:(NSError *)error;
 
 /**
-  Sent after an ad has been clicked by the person.
+ Sent after an ad has been clicked by the person.
 
- @param nativeAd An FBNativeAd object sending the message.
+
+ @param nativeAd A FBNativeAd object sending the message.
  */
 - (void)nativeAdDidClick:(FBNativeAd *)nativeAd;
 
 /**
-  When an ad is clicked, the modal view will be presented. And when the user finishes the
+ When an ad is clicked, the modal view will be presented. And when the user finishes the
  interaction with the modal view and dismiss it, this message will be sent, returning control
  to the application.
 
- @param nativeAd An FBNativeAd object sending the message.
+
+ @param nativeAd A FBNativeAd object sending the message.
  */
 - (void)nativeAdDidFinishHandlingClick:(FBNativeAd *)nativeAd;
 

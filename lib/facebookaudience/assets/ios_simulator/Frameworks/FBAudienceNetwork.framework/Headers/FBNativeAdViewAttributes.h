@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FBNativeAdViewAttributes : NSObject <NSCopying>
 
 /**
- This is a method to create native ad view attributes with a dictionary
+ Initializes native ad view attributes with a dictionary
  */
 - (instancetype)initWithDictionary:(NSDictionary<id, id> *)dict NS_DESIGNATED_INITIALIZER;
 

@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -34,7 +34,7 @@ FB_CLASS_EXPORT
 @property (nonatomic, assign, readonly) FBNativeBannerAdViewType type;
 
 /**
- This is a method to create a native ad template using the given placement id and type.
+ Factory method that creates a native ad template using the given placement id and type.
  @param nativeBannerAd The native banner ad to use to create this view.
  @param type The type of this native banner ad template. For more information, consult FBNativeAdBannerViewType.
  */
@@ -42,7 +42,7 @@ FB_CLASS_EXPORT
                                             withType:(FBNativeBannerAdViewType)type;
 
 /**
- This is a method to create a native ad template using the given placement id and type.
+ Factory method that creates a native ad template using the given placement id and type.
  @param nativeBannerAd The native banner ad to use to create this view.
  @param type The type of this native banner ad template. For more information, consult FBNativeAdBannerViewType.
  @param attributes The attributes to render this native ad template with.

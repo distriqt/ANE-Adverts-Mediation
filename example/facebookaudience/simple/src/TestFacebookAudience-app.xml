@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/33.1">
+<application xmlns="http://ns.adobe.com/air/application/50.1">
 	<id>com.distriqt.test</id>
 	<filename>TestFacebookAudience</filename>
 	<name>TestFacebookAudience</name>
@@ -58,6 +58,9 @@
 					<string>cstr6suwn9.skadnetwork</string>
 				</dict>
 			</array>
+
+            <key>MinimumOSVersion</key>
+            <string>12.0</string>
 
 		]]></InfoAdditions>
 		<requestedDisplayResolution>high</requestedDisplayResolution>

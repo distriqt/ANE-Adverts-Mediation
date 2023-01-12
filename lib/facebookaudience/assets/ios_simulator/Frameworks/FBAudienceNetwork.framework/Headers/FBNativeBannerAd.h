@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -6,6 +6,7 @@
 #import <FBAudienceNetwork/FBAdImage.h>
 #import <FBAudienceNetwork/FBAdSettings.h>
 #import <FBAudienceNetwork/FBNativeAdBase.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,7 +32,6 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeBannerAd : FBNative
  @param viewController The UIViewController that will be used to present SKStoreProductViewController
  (iTunes Store product information) or the in-app browser. If nil is passed, the top view controller currently shown
  will be used.
-
 
  The whole area of the UIView will be clickable.
  */
@@ -104,28 +104,28 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeBannerAd : FBNative
 @optional
 
 /**
- Sent when an FBNativeBannerAd has been successfully loaded.
+ Sent when a FBNativeBannerAd has been successfully loaded.
 
- @param nativeBannerAd An FBNativeBannerAd object sending the message.
+ @param nativeBannerAd A FBNativeBannerAd object sending the message.
  */
 - (void)nativeBannerAdDidLoad:(FBNativeBannerAd *)nativeBannerAd;
 
 /**
- Sent when an FBNativeBannerAd has succesfully downloaded all media
+ Sent when a FBNativeBannerAd has succesfully downloaded all media
  */
 - (void)nativeBannerAdDidDownloadMedia:(FBNativeBannerAd *)nativeBannerAd;
 
 /**
- Sent immediately before the impression of an FBNativeBannerAd object will be logged.
+ Sent immediately before the impression of a FBNativeBannerAd object will be logged.
 
- @param nativeBannerAd An FBNativeBannerAd object sending the message.
+ @param nativeBannerAd A FBNativeBannerAd object sending the message.
  */
 - (void)nativeBannerAdWillLogImpression:(FBNativeBannerAd *)nativeBannerAd;
 
 /**
- Sent when an FBNativeBannerAd is failed to load.
+ Sent when a FBNativeBannerAd is failed to load.
 
- @param nativeBannerAd An FBNativeBannerAd object sending the message.
+ @param nativeBannerAd A FBNativeBannerAd object sending the message.
  @param error An error object containing details of the error.
  */
 - (void)nativeBannerAd:(FBNativeBannerAd *)nativeBannerAd didFailWithError:(NSError *)error;
@@ -133,7 +133,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeBannerAd : FBNative
 /**
  Sent after an ad has been clicked by the person.
 
- @param nativeBannerAd An FBNativeBannerAd object sending the message.
+ @param nativeBannerAd A FBNativeBannerAd object sending the message.
  */
 - (void)nativeBannerAdDidClick:(FBNativeBannerAd *)nativeBannerAd;
 
@@ -142,7 +142,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED @interface FBNativeBannerAd : FBNative
  interaction with the modal view and dismiss it, this message will be sent, returning control
  to the application.
 
- @param nativeBannerAd An FBNativeBannerAd object sending the message.
+ @param nativeBannerAd A FBNativeBannerAd object sending the message.
  */
 - (void)nativeBannerAdDidFinishHandlingClick:(FBNativeBannerAd *)nativeBannerAd;
 

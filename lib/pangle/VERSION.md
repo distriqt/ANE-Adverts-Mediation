@@ -2,4 +2,4 @@
 
 | Extension | Version | Android Lib | iOS Lib |
 | --- | --- | --- | --- |
-| com.distriqt.admob.Pangle | 4.7.0 | 4.7.0.6 | 4.7.0.6 |
+| com.distriqt.admob.Pangle | 4.9.0 | 4.9.0.7 | 5.0.0.3 |

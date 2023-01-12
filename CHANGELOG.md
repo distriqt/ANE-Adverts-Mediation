@@ -1,3 +1,18 @@
+###### 2023.01.12 [v6.6.0]
+
+```
+feat(ios): Xcode 14 update, remove bitcode and add no-objc-msgsend-selector-stubs compiler flag 
+feat(adverts): update to support Adverts v13.8.0
+
+feat(adcolony): update sdk: android v4.8.0 ios v4.9.0
+feat(applovin): update sdk: android v11.6.1 ios v11.6.1
+feat(facebook): update sdk: android v6.12.0 ios v6.12.0
+feat(ironsource): update sdk: android v7.2.6 ios v7.2.6
+feat(pangle): update sdk: android v4.9.0.7 ios v5.0.0.3
+feat(tapjoy): update sdk: android v12.11.1 ios v12.11.1
+feat(unityads): update sdk: android v4.5.0 ios v4.3.0
+```
+
 ###### 2022.11.05 [v6.5.0]
 
 ```

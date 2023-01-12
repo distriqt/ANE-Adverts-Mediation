@@ -1,4 +1,4 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 #import <UIKit/UIKit.h>
 
@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, FBNativeAdViewType) {
 };
 
 /**
-  The FBNativeAdView creates prebuilt native ad template views and manages native ads.
+ The FBNativeAdView creates prebuilt native ad template views and manages native ads.
  */
 FB_CLASS_EXPORT
 @interface FBNativeAdView : FBNativeAdBaseView
