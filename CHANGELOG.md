@@ -1,3 +1,9 @@
+###### 2023.02.17 [v6.6.1]
+
+```
+feat(ios): strip bitcode from dynamic frameworks that haven't been updated yet (resolves #58) 
+```
+
 ###### 2023.01.12 [v6.6.0]
 
 ```
