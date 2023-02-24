@@ -1,3 +1,9 @@
+###### 2023.02.24 [v6.6.2]
+
+```
+fix(pangle): corrected ios implementation missing dependency (resolves #56)
+```
+
 ###### 2023.02.24 [v6.6.1]
 
 ```
