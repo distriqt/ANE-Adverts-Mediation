@@ -6,7 +6,7 @@
  * \__,_/_/____/_/ /_/  /_/\__, /_/
  *                           / /
  *                           \/
- * http://distriqt.com
+ * https://distriqt.com
  */
 package
 {

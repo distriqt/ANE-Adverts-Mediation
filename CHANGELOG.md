@@ -1,3 +1,9 @@
+###### 2023.06.02 [v6.7.0]
+
+```
+feat(android): update to support AIR background thread implementation
+```
+
 ###### 2023.02.24 [v6.6.2]
 
 ```
