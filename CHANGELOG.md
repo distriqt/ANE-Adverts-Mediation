@@ -1,3 +1,17 @@
+###### 2023.08.18 [v6.8.0]
+
+```
+Compatible with Adverts v14.3.0 
+
+feat(adcolony): update adcolony sdk: android v4.8.0.2
+feat(applovin): update applovin sdk: android v11.11.1.0
+feat(facebook): update audience sdk: android v6.15.0
+feat(ironsource): update ironsource sdk: android v7.4.0
+feat(pangle): update pangle sdk: android v5.3.0.6
+feat(tapjoy): update tapjoy sdk: android v13.1.2
+feat(unityads): update unityads sdk: android v4.8.0
+```
+
 ###### 2023.06.02 [v6.7.0]
 
 ```

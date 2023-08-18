@@ -303,6 +303,7 @@
 		<extensionID>com.google.code.gson</extensionID>
 
 		<extensionID>com.distriqt.admob.AppLovin</extensionID>
+		<extensionID>com.jetbrains.kotlin</extensionID>
 	</extensions>
 
 </application>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/50.1">
+<application xmlns="http://ns.adobe.com/air/application/50.2">
     <id>com.distriqt.test</id>
     <filename>TestAdColony</filename>
     <name>TestAdColony</name>
@@ -269,6 +269,7 @@
         <extensionID>com.google.code.gson</extensionID>
 
         <extensionID>com.distriqt.admob.AdColony</extensionID>
+        <extensionID>com.jetbrains.kotlin</extensionID>
     </extensions>
 
 </application>
