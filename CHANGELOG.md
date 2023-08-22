@@ -1,3 +1,9 @@
+###### 2023.08.22 [v6.8.1]
+
+```
+fix(unity): correct airpackage dependencies - missing androidx.webkit (resolves #61)
+```
+
 ###### 2023.08.18 [v6.8.0]
 
 ```
