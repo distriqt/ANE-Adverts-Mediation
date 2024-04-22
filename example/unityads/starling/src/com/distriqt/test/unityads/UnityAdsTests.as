@@ -109,15 +109,7 @@ package com.distriqt.test.unityads
 							log( "statusErrorHandler(): " + event.error );
 						}
 						
-						
-						Adverts.service.getAdvertisingId(
-								function( info:AdvertisingIdInfo ):void
-								{
-									log( "Advertising ID: " + info.advertisingId );
-									log( "isLimitAdTrackingEnabled : " + info.isLimitAdTrackingEnabled );
-								}
-						);
-						
+
 					}
 					else
 					{

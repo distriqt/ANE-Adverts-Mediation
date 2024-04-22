@@ -1,0 +1,11 @@
+framework module Tapjoy {
+    module iOS {
+        umbrella header "Tapjoy.h"
+    }
+
+    module Cpp {
+        requires iOS
+        header "TapjoyCpp.h"
+        header "TapjoyConnectFlag.h"
+    }
+}

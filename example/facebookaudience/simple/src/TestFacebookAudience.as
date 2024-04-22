@@ -41,7 +41,6 @@ package
 	{
 		
 		public static var admob_rewardedAdUnitID:String = "";
-		public static var admob_accountId:String = "";
 		public static var admob_publisherId:String = "";
 		public static var test_id:String = "";
 		
@@ -168,8 +167,9 @@ package
 		
 		private function stage_resizeHandler( event:Event ):void
 		{
+			_text.y = 100;
 			_text.width  = stage.stageWidth;
-			_text.height = stage.stageHeight - 100;
+			_text.height = stage.stageHeight - 200;
 		}
 		
 		
@@ -191,7 +191,7 @@ package
 							_adView.addEventListener( RewardedVideoAdEvent.ERROR, adverts_errorHandler );
 							_adView.setAdUnitId( admob_rewardedAdUnitID );
 							_adView.load( new AdRequestBuilder()
-												  .addTestDevice( test_id )
+//												  .addTestDevice( test_id )
 												  .build()
 							);
 							break;

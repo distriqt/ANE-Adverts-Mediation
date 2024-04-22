@@ -50,7 +50,7 @@
 			<string>LaunchScreen</string>
 
             <key>MinimumOSVersion</key>
-            <string>11.0</string>
+            <string>12.0</string>
 
 		]]></InfoAdditions>
 		<requestedDisplayResolution>high</requestedDisplayResolution>
@@ -267,7 +267,7 @@
 
 		<extensionID>com.distriqt.playservices.Base</extensionID>
 		<extensionID>com.distriqt.playservices.Ads</extensionID>
-		<extensionID>com.distriqt.playservices.AdsIdentifier</extensionID>
+		<extensionID>com.distriqt.playservices.AppSet</extensionID>
 
 		<extensionID>androidx.appcompat</extensionID>
 		<extensionID>androidx.browser</extensionID>

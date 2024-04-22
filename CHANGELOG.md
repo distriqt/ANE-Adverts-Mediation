@@ -1,3 +1,17 @@
+###### 2024.04.22 [v7.0.0]
+
+```
+update for compatibility with Adverts v15.0.0
+
+feat(adcolony): version bump, small bug fix for error handling, build with latest sdks
+feat(applovin): update sdk: android v12.4.2 ios v12.4.1
+feat(facebookaudience): update sdk: android v6.17.0 ios v6.15.0 
+feat(ironsource): update sdk: android v8.0.0 ios v8.0.0 (resolves #51)
+feat(pangle): update sdk: android v5.9.0.2 ios v5.8.0.8 (resolves #65, resolves #53, #63)
+feat(tapjoy): update sdk: android v13.2.1 ios v13.2.1
+feat(unityads): update sdk: android v4.10.0 ios v4.10.0 (resolves #66, #49)
+```
+
 ###### 2023.08.22 [v6.8.1]
 
 ```

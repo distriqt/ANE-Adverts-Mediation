@@ -42,11 +42,10 @@ package com.distriqt.test.pangle
 			try
 			{
 				log( "Pangle Supported: " + AdMobPangle.isSupported );
-				if (AdMobPangle.isSupported)
-				{
-					log( "Pangle Version:       " + AdMobPangle.instance.version );
-					log( "Pangle nativeVersion: " + AdMobPangle.instance.nativeVersion );
-				}
+				if (!AdMobPangle.isSupported) return;
+
+				log( "Pangle Version:       " + AdMobPangle.instance.version );
+				log( "Pangle nativeVersion: " + AdMobPangle.instance.nativeVersion );
 
 			}
 			catch (e:Error)
