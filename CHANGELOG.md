@@ -1,3 +1,29 @@
+###### 2024.05.24 [v7.0.0]
+
+```
+feat: update all square okio dependencies to avoid conflicts (resolves #68)
+feat(adcolony): deprecation notice
+feat(applovin): update applovin sdk: android v12.5.0, ios v12.5.0
+chore(facebookaudience): build
+feat(ironsource): update ironsource sdk: android v8.0.0, ios v8.1.0
+feat(pangle): update pangle sdk: android v5.9.0.6, ios v5.9.0.7
+feat(tapjoy): deprecation notice
+feat(unityads): update unityads sdk: android v4.11.3, ios v4.11.3
+```
+
+###### 2024.05.24 [v7.0.0]
+
+```
+feat: update all square okio dependencies to avoid conflicts (resolves #68)
+feat(adcolony): deprecation notice
+feat(applovin): update applovin sdk: android v12.5.0, ios v12.5.0
+chore(facebookaudience): build
+feat(ironsource): update ironsource sdk: android v8.0.0, ios v8.1.0
+feat(pangle): update pangle sdk: android v5.9.0.6, ios v5.9.0.7
+feat(tapjoy): deprecation notice
+feat(unityads): update unityads sdk: android v4.11.3, ios v4.11.3
+```
+
 ###### 2024.04.22 [v7.0.0]
 
 ```
