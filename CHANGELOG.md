@@ -1,3 +1,11 @@
+###### 2024.06.12 [v7.0.1]
+
+```
+fix(unityads): correct crash issue on older version of ios relating to Network framework (resolves #69)
+fix(unityads): correct missing dependency from android resulting in init failure (resolves #49)
+fix(applovin): resolve issue with dynamic framework and incorrect signing (resolves #67)
+```
+
 ###### 2024.05.24 [v7.0.0]
 
 ```

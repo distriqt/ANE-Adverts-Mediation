@@ -93,7 +93,7 @@ package com.distriqt.test.unityads
 			_container.y = 40;
 			_container.layout = layout;
 			_container.width = stage.stageWidth;
-			_container.height = stage.stageHeight-40;
+			_container.height = stage.stageHeight-80;
 			
 			
 			_tests = new UnityAdsTests( this );
@@ -103,7 +103,9 @@ package com.distriqt.test.unityads
 			addAction( "Load", _tests.load );
 			addAction( "Show", _tests.show );
 			addAction( "Destroy", _tests.destroy );
-			
+			addAction( "Ad Inspector", _tests.openAdInspector );
+			addAction( "IDFA", _tests.getIDFA );
+
 			addAction( "Consent :Optional", _tests.setConsent );
 			
 			addChild( _tests );

@@ -191,6 +191,7 @@
         <extensionID>androidx.webkit</extensionID>
 
         <extensionID>com.distriqt.Adverts</extensionID>
+        <extensionID>com.distriqt.IDFA</extensionID>
         <extensionID>com.distriqt.Core</extensionID>
         <extensionID>com.distriqt.playservices.Base</extensionID>
         <extensionID>com.distriqt.playservices.Ads</extensionID>
@@ -204,6 +205,7 @@
         <extensionID>androidx.work</extensionID>
         <extensionID>com.google.code.gson</extensionID>
         <extensionID>com.google.guava</extensionID>
+        <extensionID>io.insert.koin.koincore</extensionID>
         <extensionID>com.jetbrains.kotlin</extensionID>
     </extensions>
 

@@ -1,0 +1,73 @@
+{
+    "identifier": "com.distriqt.test.debug",
+    "name": "TestAppLovin",
+    "filename": "TestAppLovin",
+    "version": "0.0.1",
+    "versionLabel": "",
+    "platforms": [],
+    "dependencies": [
+        {
+            "version": "12.5.0",
+            "id": "com.distriqt.admob.AppLovin"
+        },
+        {
+            "version": "5.2.0",
+            "id": "com.distriqt.IDFA"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui_MetalWorksMobileTheme"
+        },
+        {
+            "version": "2.7.0",
+            "id": "starling"
+        }
+    ],
+    "configuration": {
+        "adMobAndroidApplicationId": {
+            "name": "adMobAndroidApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-2896211184606369~2324641339"
+        },
+        "adMobIOSApplicationId": {
+            "name": "adMobIOSApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-2896211184606369~9505948937"
+        },
+        "applovinAndroidSdkKey": {
+            "name": "applovinAndroidSdkKey",
+            "required": "true",
+            "value": "XXXXXXXXX"
+        },
+        "applovinIOSSdkKey": {
+            "name": "applovinIOSSdkKey",
+            "required": "true",
+            "value": "XXXXXXXXX"
+        },
+        "userTrackingUsageDescription": {
+            "name": "userTrackingUsageDescription",
+            "required": "true",
+            "value": "Allows us to deliver personalized ads for you."
+        }
+    },
+    "repositories": [],
+    "deployOptions": {},
+    "buildTypes": {
+        "ios-debug": {
+            "identifier": "com.distriqt.test",
+            "configuration": {
+                "apsEnvironment": "development"
+            }
+        },
+        "android-debug": {
+            "identifier": "com.distriqt.test.debug",
+            "configuration": {
+                "apsEnvironment": "development"
+            }
+        }
+    }
+}

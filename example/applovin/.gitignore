@@ -1,3 +1,8 @@
 bin-debug
 bin
 *Distriqt*
+
+apm_packages
+ane
+project-lock.apm
+assets
