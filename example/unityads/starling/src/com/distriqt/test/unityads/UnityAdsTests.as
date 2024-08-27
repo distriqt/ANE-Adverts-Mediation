@@ -15,19 +15,21 @@
 package com.distriqt.test.unityads
 {
 	import com.distriqt.extension.admob.unityads.AdMobUnityAds;
+	import com.distriqt.extension.adverts.AdapterStatus;
 	import com.distriqt.extension.adverts.AdvertPlatform;
 	import com.distriqt.extension.adverts.Adverts;
 	import com.distriqt.extension.adverts.RequestConfiguration;
 	import com.distriqt.extension.adverts.builders.AdRequestBuilder;
 	import com.distriqt.extension.adverts.events.AdInspectorEvent;
 	import com.distriqt.extension.adverts.events.AdvertsEvent;
-	import com.distriqt.extension.adverts.events.ConsentEvent;
 	import com.distriqt.extension.adverts.events.FullScreenContentEvent;
 	import com.distriqt.extension.adverts.events.RewardedVideoAdEvent;
 	import com.distriqt.extension.adverts.rewarded.RewardedVideoAd;
 	import com.distriqt.extension.idfa.IDFA;
 	import com.distriqt.extension.idfa.TrackingAuthorisationStatus;
 	import com.distriqt.extension.idfa.events.IDFAEvent;
+
+	import flash.utils.setTimeout;
 
 	import starling.display.Sprite;
 
@@ -111,34 +113,21 @@ package com.distriqt.test.unityads
 							if (Config.test_id != "")
 							{
 								var reqConfig:RequestConfiguration = Adverts.service.getRequestConfiguration();
-								reqConfig.setTestDeviceIds([ Config.test_id ]);
+								reqConfig.setTestDeviceIds( [ Config.test_id ] );
 								Adverts.service.setRequestConfiguration( reqConfig );
 							}
 
-							Adverts.service.initialise();
+							Adverts.service.addEventListener( AdvertsEvent.INITIALISED, initialisedHandler );
+
+							setTimeout( function ():void
+										{
+											Adverts.service.initialise();
+										}, 4000 );
 						}
 						else
 						{
 							log( "No platform supported" );
 						}
-
-						Adverts.service.consent.addEventListener( ConsentEvent.STATUS_UPDATED, statusUpdatedHandler );
-						Adverts.service.consent.addEventListener( ConsentEvent.STATUS_ERROR, statusErrorHandler );
-
-						Adverts.service.consent.getConsentStatus( Config.admob_publisherId );
-
-
-						function statusUpdatedHandler( event:ConsentEvent ):void
-						{
-							log( "statusUpdatedHandler(): " + event.status
-										 + " inEea:" + event.inEeaOrUnknown );
-						}
-
-						function statusErrorHandler( event:ConsentEvent ):void
-						{
-							log( "statusErrorHandler(): " + event.error );
-						}
-
 
 					}
 					else
@@ -156,6 +145,17 @@ package com.distriqt.test.unityads
 			catch (e:Error)
 			{
 				trace( e );
+			}
+		}
+
+
+		private function initialisedHandler( event:AdvertsEvent ):void
+		{
+			// Platform is now initialised and ready to load ads
+			log( "Initialised" );
+			for each (var adapterStatus:AdapterStatus in e.adapterStatus)
+			{
+				trace( "adapter: " + adapterStatus.name + " : " + adapterStatus.state + " [" + adapterStatus.latency + "] - " + adapterStatus.description );
 			}
 		}
 

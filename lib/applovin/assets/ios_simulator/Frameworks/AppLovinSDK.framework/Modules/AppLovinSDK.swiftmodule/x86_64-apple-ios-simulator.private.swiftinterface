@@ -10,6 +10,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers open class AdapterDelegate<T, U> : ObjectiveC.NSObject where T : AppLovinSDK.ALMediationAdapter, U : AppLovinSDK.MAAdapterDelegate {
   unowned final public let adapter: T
+  final public let unownedAdapter: AppLovinSDK.ALUnowned<T>
   weak public var delegate: U?
   final public let adFormat: AppLovinSDK.MAAdFormat
   final public let parameters: any AppLovinSDK.MAAdapterResponseParameters
@@ -27,11 +28,23 @@ import _SwiftConcurrencyShims
   public init(adapter: T, delegate: any AppLovinSDK.MAInterstitialAdapterDelegate, parameters: any AppLovinSDK.MAAdapterResponseParameters)
   @objc deinit
 }
+@_hasMissingDesignatedInitializers open class AppOpenAdapterDelegate<T> : AppLovinSDK.AdapterDelegate<T, any AppLovinSDK.MAAppOpenAdapterDelegate> where T : AppLovinSDK.ALMediationAdapter {
+  public init(adapter: T, delegate: any AppLovinSDK.MAAppOpenAdapterDelegate, parameters: any AppLovinSDK.MAAdapterResponseParameters)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers open class RewardedAdapterDelegate<T> : AppLovinSDK.AdapterDelegate<T, any AppLovinSDK.MARewardedAdapterDelegate> where T : AppLovinSDK.ALMediationAdapter {
   public var hasGrantedReward: Swift.Bool {
     get
   }
   public init(adapter: T, delegate: any AppLovinSDK.MARewardedAdapterDelegate, parameters: any AppLovinSDK.MAAdapterResponseParameters)
+  public func setGrantedReward()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class RewardedInterstitialAdapterDelegate<T> : AppLovinSDK.AdapterDelegate<T, any AppLovinSDK.MARewardedInterstitialAdapterDelegate> where T : AppLovinSDK.ALMediationAdapter {
+  public var hasGrantedReward: Swift.Bool {
+    get
+  }
+  public init(adapter: T, delegate: any AppLovinSDK.MARewardedInterstitialAdapterDelegate, parameters: any AppLovinSDK.MAAdapterResponseParameters)
   public func setGrantedReward()
   @objc deinit
 }
@@ -74,6 +87,7 @@ public struct LogEvent {
     case notReady
     case willShow
     case showing
+    case impression
     case displayed
     case displayFailed(error: AppLovinSDK.MAAdapterError? = nil)
     case clicked

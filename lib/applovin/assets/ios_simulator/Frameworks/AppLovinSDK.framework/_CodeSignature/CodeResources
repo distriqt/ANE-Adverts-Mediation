@@ -50,7 +50,7 @@
 		</data>
 		<key>AppLovinSDKResources.bundle/Assets.car</key>
 		<data>
-		HUNPz/aUoOxUjKaOxdzA0KaR5fw=
+		eW0OVEqOTAdjeKWOlEtkBKIouTI=
 		</data>
 		<key>AppLovinSDKResources.bundle/Base.lproj/Localizable.strings</key>
 		<dict>
@@ -111,7 +111,7 @@
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		TejLqpqgIcII1z5gsefoKC2bSxA=
+		p/JLsmJvasZ9o+CZ/ZRqmHB8rIo=
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -119,11 +119,11 @@
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		UpIjq6EbOGzf3T9m6ktt/ETu+XA=
+		kf30t7vAdtLKU4IH1gQrnsSuDJ4=
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		3TqqKzdrRpcYhSwdRBfjSX6W7qo=
+		PTYub/TcICmjoC6tvGiWU6FLxHM=
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -295,7 +295,7 @@
 		</data>
 		<key>Headers/ALEventService.h</key>
 		<data>
-		ix3uhkTn2Rz8at9Jsb+Gv36utjc=
+		v8RjmcJ2q0Zl4xGmHF3vZQ/S9pk=
 		</data>
 		<key>Headers/ALEventTypes.h</key>
 		<data>
@@ -335,7 +335,7 @@
 		</data>
 		<key>Headers/ALSdk.h</key>
 		<data>
-		b3K8SzKuVnL/wJTS4EapVEZAsck=
+		dgXd1tKHy20w4zTWgSk64hW6Bo8=
 		</data>
 		<key>Headers/ALSdkConfiguration.h</key>
 		<data>
@@ -343,23 +343,19 @@
 		</data>
 		<key>Headers/ALSdkInitializationConfiguration.h</key>
 		<data>
-		qxRzZtcXIzB3IUnAdWhpY/eJuRk=
+		DxdaP9l2VZOHVGz5h+tHRc+b0JM=
 		</data>
 		<key>Headers/ALSdkSettings.h</key>
 		<data>
-		oBRpEYniL6rY0Bj1X0IJMH4dbWA=
-		</data>
-		<key>Headers/ALTargetingData.h</key>
-		<data>
-		ALmkpH2VgxKjpfk8BfhTKkPff24=
+		8+PKIxVaJxo9rCEL3CgFzSW/VTc=
 		</data>
 		<key>Headers/ALTermsAndPrivacyPolicyFlowSettings.h</key>
 		<data>
 		EwSWMs21tKa6D/TEYCfEattnHpE=
 		</data>
-		<key>Headers/ALUserSegment.h</key>
+		<key>Headers/ALUnowned.h</key>
 		<data>
-		iM6rx0FK85C3Lhw3Wvmdyb5wP5A=
+		MwqauD0Bh+SKlN9qM6lj7hcb77k=
 		</data>
 		<key>Headers/ALUtils.h</key>
 		<data>
@@ -371,7 +367,7 @@
 		</data>
 		<key>Headers/AppLovinSDK.h</key>
 		<data>
-		zXnrgbCFICX+C9A7Y9O8d2uAoig=
+		p6d2F6BTS7c2yY03CptdxyBearA=
 		</data>
 		<key>Headers/MAAd.h</key>
 		<data>
@@ -569,6 +565,14 @@
 		<data>
 		2gVQzadvnm9a/tULCV2IwHQuImg=
 		</data>
+		<key>Headers/MASegment.h</key>
+		<data>
+		KcqelB3gVyzFenImz5+NEcWPg1g=
+		</data>
+		<key>Headers/MASegmentCollection.h</key>
+		<data>
+		oaQx78abA0Cwu/lpuavyZ4oMrBE=
+		</data>
 		<key>Headers/MASignalCollectionDelegate.h</key>
 		<data>
 		znszegVcmQLy6Ehe/CjMFwZBKEI=
@@ -599,15 +603,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CrEnpZoQXIYih2hmBtsSfSW02lg=
+		gHas8heTCm3gau7OuBBVvB2uCwk=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BlhvoGoW2nuwxL9etntpQivGXOw=
+		4O56Ocx/H9uVfCBLaRPMpOKg3kg=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZSWiA55O8fELQZOw1B2AfOk23VE=
+		WFlz0sLtBgU5xDL56ozJHm0pYFk=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -615,19 +619,19 @@
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZSWiA55O8fELQZOw1B2AfOk23VE=
+		WFlz0sLtBgU5xDL56ozJHm0pYFk=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Kl3DhQbDnksjVipyDAjb5p0k3xY=
+		8uN8iUzEB03HHZV35jph7gLRGtY=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		BlhvoGoW2nuwxL9etntpQivGXOw=
+		4O56Ocx/H9uVfCBLaRPMpOKg3kg=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		eR2xl5T5lfx0yKzaOM5fXEPvQGc=
+		UFlB74njhJgsHAyLO+9wAaTrE5Y=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -635,11 +639,11 @@
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eR2xl5T5lfx0yKzaOM5fXEPvQGc=
+		UFlB74njhJgsHAyLO+9wAaTrE5Y=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MbDmbr+w4KZtsGtSf7wk9St8KvE=
+		pt9mGrgKvcIPwG5Nlv/kTGzJWzM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -648,6 +652,10 @@
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		jR5kks/wyXPVXeOvTLbLYPKn2g0=
+		</data>
+		<key>PrivateHeaders/ALPromise.h</key>
+		<data>
+		LZOzQydMIEo5Yk5LMYzsTW7oLqA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -733,7 +741,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjUTk7uO085wGMJpYlIPqGAeZuaLPBw3e4eCk80BBSc=
+			7/jpf8y6Rxvs9YBnVngRQwHcyo4ZIT7NczenUiEPVkU=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/Base.lproj/Localizable.strings</key>
@@ -833,7 +841,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1HL+fTN42a3kdiFcQ3ccwPJY6YwkBov2GgLR8JVoblY=
+			agVPQZaRcMEX5jS5Gi1wA7sqkf7tWoAraqFKyb94bs8=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -847,14 +855,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JHZsztRrTqsZ+/GDegCrr6udxTJ5NVZFrmSPtiMVSwY=
+			YMs9Usc/izKppVm7lCwlcqoO8fgPI5JOqNiVjCXczYs=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sxBJpgzFqaKycbgE+vTq7t3RQoUTzBcfnXO9vQ3wwnA=
+			JYos2hf0qygA1KEnLQbNaFTimrUNHyTVHaA6mSGC5Hg=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1101,7 +1109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zII+eztXrpsKVPHhyZTEXB4lA42N79ypu7ovXzEoTbw=
+			8KYTrNxsQ9nyyR/iA2vWLjiaf8TGvVz+dGXnenRdTBk=
 			</data>
 		</dict>
 		<key>Headers/ALEventTypes.h</key>
@@ -1171,7 +1179,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G5x9eFrKO1vYfN/8aJqRxbJEudUhK+gM17rHIBuoyAI=
+			JuU9c4j+jZihaD+xtm5UgkchZtvIdxORKhN/BKKlafc=
 			</data>
 		</dict>
 		<key>Headers/ALSdkConfiguration.h</key>
@@ -1185,21 +1193,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v+AWpzZb0fHF4JJefqoSPZRzaBapj3JdpVaTqFBkqBc=
+			idvT3XbyeEEf17ducBGTmPki2iCJOuVO1xMOOvQNzhA=
 			</data>
 		</dict>
 		<key>Headers/ALSdkSettings.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j7qw4jkvx8ZMYUaOke4f+sKVV5ZaXu7VkM/++lkt9Iw=
-			</data>
-		</dict>
-		<key>Headers/ALTargetingData.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iOxelCqh4FNgHgh40dXFrWSS+ONaLD4FmKBjg8DD9mM=
+			Ry8FinyXdRqOKt+N9nUtqhLdLSf/Z0dS20+oip9I3PU=
 			</data>
 		</dict>
 		<key>Headers/ALTermsAndPrivacyPolicyFlowSettings.h</key>
@@ -1209,11 +1210,11 @@
 			HtwFwuaHn1CKoA7ADhvg5VPqkpqtEn4HAXN0MsytX2E=
 			</data>
 		</dict>
-		<key>Headers/ALUserSegment.h</key>
+		<key>Headers/ALUnowned.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gfvZZGzcTIN/G7BGCFl/pmUwKiIKXgE8sg93gIXZ61E=
+			V2T9frnoyZd/01WP8IGSXqnUwOHzf1VJWNrhX+KuBcQ=
 			</data>
 		</dict>
 		<key>Headers/ALUtils.h</key>
@@ -1234,7 +1235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QzRvJNWPo4sKDwsNlaKj77+bnTqC3y51XymLGO3oMWs=
+			PFvWA2aRf3n8VHu1HuS1GNbXsBUcxrzhEmgdQp966ks=
 			</data>
 		</dict>
 		<key>Headers/MAAd.h</key>
@@ -1580,6 +1581,20 @@
 			GGRu+ERf2ngNT+nmt/KZc/FgWwq3DGAbi/kZwGmb518=
 			</data>
 		</dict>
+		<key>Headers/MASegment.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kOqxEt0Yk9zyAVOrQyeXiZmdSK05lH3EXucuMkhWJtA=
+			</data>
+		</dict>
+		<key>Headers/MASegmentCollection.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xU/xEpq6sF1NlaAg6b0mrk7Ihe1YDo4G5uWTMTLwBuI=
+			</data>
+		</dict>
 		<key>Headers/MASignalCollectionDelegate.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1633,14 +1648,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mZ5SDZqxKPN4MPwnqyYtBtBZOlwf7wP+6hNy8+6DxXg=
+			pIskBbfrfNCo5bdF6VWHsKfglBTwx7fEQIEcOeK66x8=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g7sNw00o+TAu+zwYFLZ6ptzIbQAUdO5mByKpKt+CWSc=
+			nDYk02YFKHCnp0D/VyB3n/t25b0IvUtD9MwTNp99VwY=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1654,28 +1669,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g7sNw00o+TAu+zwYFLZ6ptzIbQAUdO5mByKpKt+CWSc=
+			nDYk02YFKHCnp0D/VyB3n/t25b0IvUtD9MwTNp99VwY=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oigOGbjZnO3Byw+ObsGsKR9hSKgBZhHCDJ+F/sNVE/k=
+			oRKbVU9VKZZ24SD/mdAyCF+BiXeMdl3EcD7kLyoEDK0=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mZ5SDZqxKPN4MPwnqyYtBtBZOlwf7wP+6hNy8+6DxXg=
+			pIskBbfrfNCo5bdF6VWHsKfglBTwx7fEQIEcOeK66x8=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/mq6mi1q8iz5KHEeCV2VzjpsisAGdBfAPOng4uJGwOg=
+			Oh/0Gjr1qFwf+3WU7/hT6igbD8W4DtCzYht+ejtrXJ0=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1689,14 +1704,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/mq6mi1q8iz5KHEeCV2VzjpsisAGdBfAPOng4uJGwOg=
+			Oh/0Gjr1qFwf+3WU7/hT6igbD8W4DtCzYht+ejtrXJ0=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WNrUij7gAZqZLh7JyZ5+2nSr2O534NyJTMIPzdLQ7yg=
+			Rs/xzgxef26MKro7TRm5RhEA74WN3PyGq2cMAuonZA0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1711,6 +1726,13 @@
 			<key>hash2</key>
 			<data>
 			gOOIgdv7OxZfnvNc+kOyjqwA1bGAWKEnWIwpQZOEHJ8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/ALPromise.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R41FW3VDxWTzLEFIKXf0OP+qM2u3WGi3agv7gIRuiIU=
 			</data>
 		</dict>
 	</dict>

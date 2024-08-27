@@ -28,6 +28,8 @@ package com.distriqt.test.applovin
 	import com.distriqt.extension.idfa.TrackingAuthorisationStatus;
 	import com.distriqt.extension.idfa.events.IDFAEvent;
 
+	import flash.utils.setTimeout;
+
 	import starling.display.Sprite;
 
 	/**
@@ -109,8 +111,9 @@ package com.distriqt.test.applovin
 
 							if (Config.test_id != "")
 							{
+								log( "setTestDeviceIds: " + Config.test_id );
 								var reqConfig:RequestConfiguration = Adverts.service.getRequestConfiguration();
-								reqConfig.setTestDeviceIds([ Config.test_id ]);
+								reqConfig.setTestDeviceIds( [ Config.test_id ] );
 								Adverts.service.setRequestConfiguration( reqConfig );
 							}
 

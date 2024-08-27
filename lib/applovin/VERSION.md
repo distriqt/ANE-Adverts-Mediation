@@ -2,4 +2,4 @@
 
 | Extension | Version | Android Lib | iOS Lib |
 | --- | --- | --- | --- |
-| com.distriqt.admob.AppLovin | 12.5.1 | 12.5.0 | 12.5.0 |
+| com.distriqt.admob.AppLovin | 12.6.0 | 12.6.0 | 12.6.1 |

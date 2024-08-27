@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/51.0">
+<application xmlns="http://ns.adobe.com/air/application/51.1">
 	<id>com.distriqt.test</id>
 	<filename>TestIronSource</filename>
 	<name>TestIronSource</name>
@@ -109,10 +109,21 @@
 						android:exported="false"
 						android:hardwareAccelerated="true"
 						android:theme="@android:style/Theme.Translucent" />
+					<activity
+						android:name="com.ironsource.mediationsdk.testSuite.TestSuiteActivity"
+						android:configChanges="orientation|screenSize"
+						android:exported="false"
+						android:hardwareAccelerated="true"
+						android:theme="@android:style/Theme.NoTitleBar" >
+						<meta-data
+							android:name="android.webkit.WebView.EnableSafeBrowsing"
+							android:value="true" />
+					</activity>
 
 					<provider
 						android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"
-						android:authorities="air.com.distriqt.test.IronsourceLifecycleProvider" />
+						android:authorities="air.com.distriqt.test.IronsourceLifecycleProvider"
+						android:exported="false" />
 
 
 

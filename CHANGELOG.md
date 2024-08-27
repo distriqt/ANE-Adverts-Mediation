@@ -1,3 +1,15 @@
+###### 2024.08.27 [v7.1.0]
+
+```
+feat(update): update compatibility with latest Adverts extension (v15.2.0)
+
+feat(applovin): update applovin sdk: android v12.6.0, ios v12.6.1
+feat(unityads): update unityads sdk: android v4.12.2, ios v4.12.2 (resolves https://github.com/distriqt/ANE-Adverts-Mediation/issues/71)
+feat(facebookaudience): update fb audience sdk: ios v6.15.1
+feat(ironsource): update ironsource sdk: android v8.2.1, ios v8.2.0
+feat(pangle): update pangle sdk: android v6.1.0.7, ios v6.1.0.6
+```
+
 ###### 2024.06.12 [v7.0.1]
 
 ```
