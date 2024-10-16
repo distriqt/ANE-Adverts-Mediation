@@ -1,0 +1,53 @@
+{
+    "identifier": "com.distriqt.test.debug",
+    "name": "TestAdverts",
+    "filename": "TestAdverts",
+    "version": "0.0.27",
+    "versionLabel": "",
+    "platforms": [],
+    "dependencies": [
+        {
+            "version": "15.2.0",
+            "id": "com.distriqt.Adverts"
+        },
+        {
+            "version": "5.2.0",
+            "id": "com.distriqt.IDFA"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui_MetalWorksMobileTheme"
+        },
+        {
+            "version": "3.5.300",
+            "id": "io.insert.koin.koincore"
+        },
+        {
+            "version": "2.7.0",
+            "id": "starling"
+        }
+    ],
+    "configuration": {
+        "adMobAndroidApplicationId": {
+            "name": "adMobAndroidApplicationId",
+            "required": "true",
+            "value": ""
+        },
+        "adMobIOSApplicationId": {
+            "name": "adMobIOSApplicationId",
+            "required": "true",
+            "value": ""
+        },
+        "userTrackingUsageDescription": {
+            "name": "userTrackingUsageDescription",
+            "required": "true",
+            "value": "Allows us to deliver personalized ads for you."
+        }
+    },
+    "repositories": [],
+    "deployOptions": {}
+}

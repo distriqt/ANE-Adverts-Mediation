@@ -1,0 +1,21 @@
+{
+    "name": "report",
+    "version": 1,
+    "report": [
+        {
+            "classname": "IPlayTempleView",
+            "method": "alertShow",
+            "key": "2000090"
+        },
+        {
+            "classname": "IPlayTempleView",
+            "method": "alertDismiss",
+            "key": "2000091"
+        },
+        {
+            "classname": "IPlayTempleView",
+            "method": "play",
+            "key": "2000092"
+        }
+    ]
+}

@@ -1,3 +1,19 @@
+###### 2024.10.16 [v7.2.0]
+
+```
+feat(update): update compatibility with latest Adverts extension (v15.3.0)
+
+feat(applovin): update applovin sdk: android v13.0.0, ios v13.0.0
+feat(facebookaudience): update fb audience sdk: android v6.18.0 ios v6.15.2
+feat(ironsource): update ironsource sdk: android v8.4.0, ios v8.3.0
+feat(ironsource): add setMetaData method
+feat(pangle): update pangle sdk: android v6.2.0.7, ios v6.2.0.8 (resolves https://github.com/distriqt/ANE-Adverts-Mediation/issues/77)
+feat(unityads): update unityads sdk: android v4.12.3, ios v4.12.3
+feat(digitalturbine): add digital turbine mediation lib: android v8.3.1 ios v8.3.2 (resolves https://github.com/distriqt/ANE-Adverts-Mediation/issues/74)
+feat(mintegral): add mintegral mediation lib: android v16.8.61 ios v7.7.2 (resolves https://github.com/distriqt/ANE-Adverts-Mediation/issues/73)
+feat(vungle): add vungle (liftoff monetize) mediation lib: android v7.4.1 ios v7.4.1 (resolves https://github.com/distriqt/ANE-Adverts-Mediation/issues/75)
+```
+
 ###### 2024.08.27 [v7.1.0]
 
 ```

@@ -15,6 +15,9 @@
 package com.distriqt.test.pangle
 {
 	import com.distriqt.extension.admob.pangle.AdMobPangle;
+	import com.distriqt.extension.adverts.AdvertPlatform;
+	import com.distriqt.extension.adverts.Adverts;
+	import com.distriqt.extension.adverts.events.AdvertsEvent;
 
 	import starling.display.Sprite;
 
@@ -47,6 +50,14 @@ package com.distriqt.test.pangle
 				log( "Pangle Version:       " + AdMobPangle.instance.version );
 				log( "Pangle nativeVersion: " + AdMobPangle.instance.nativeVersion );
 
+				Adverts.service.setup( AdvertPlatform.PLATFORM_ADMOB );
+				Adverts.service.addEventListener(
+						AdvertsEvent.INITIALISED,
+						function ( event:AdvertsEvent ):void
+						{
+							log( "Adverts initialised" );
+						} );
+				Adverts.service.initialise();
 			}
 			catch (e:Error)
 			{

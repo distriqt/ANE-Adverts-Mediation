@@ -109,7 +109,7 @@
     <meta-data android:name="android.notch_support" android:value="true"/>
 
 
-<!-- 下面的activity和service必须注册 -->
+    <!-- 下面的activity和service必须注册 -->
     <activity
         android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity"
         android:configChanges="keyboardHidden|orientation|screenSize"
@@ -172,6 +172,11 @@
         android:configChanges="keyboardHidden|orientation|screenSize"
         android:launchMode="standard"
         android:theme="@style/tt_full_screen_interaction" />
+    <activity
+        android:name="com.bytedance.sdk.openadsdk.activity.TTAdActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:launchMode="standard"
+        android:theme="@style/tt_full_screen_new" />
 
 
     <service android:name="androidx.room.MultiInstanceInvalidationService" android:directBootAware="true" android:exported="false"/>

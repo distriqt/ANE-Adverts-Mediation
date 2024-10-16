@@ -153,7 +153,7 @@ package com.distriqt.test.unityads
 		{
 			// Platform is now initialised and ready to load ads
 			log( "Initialised" );
-			for each (var adapterStatus:AdapterStatus in e.adapterStatus)
+			for each (var adapterStatus:AdapterStatus in event.adapterStatus)
 			{
 				trace( "adapter: " + adapterStatus.name + " : " + adapterStatus.state + " [" + adapterStatus.latency + "] - " + adapterStatus.description );
 			}

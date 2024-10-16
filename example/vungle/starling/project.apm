@@ -1,0 +1,52 @@
+{
+    "identifier": "com.distriqt.test",
+    "name": "TestVungle",
+    "filename": "TestVungle",
+    "version": "0.0.1",
+    "versionLabel": "",
+    "platforms": [],
+    "dependencies": [
+        {
+            "version": "15.2.0",
+            "id": "com.distriqt.Adverts"
+        },
+        {
+            "version": "4.100.0",
+            "id": "com.distriqt.square.okhttp3"
+        },
+        {
+            "version": "3.21.120",
+            "id": "com.google.protobuflite"
+        },
+        {
+            "version": "1.4.1",
+            "id": "com.jetbrains.kotlinx"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui_MetalWorksMobileTheme"
+        },
+        {
+            "version": "2.7.0",
+            "id": "starling"
+        }
+    ],
+    "configuration": {
+        "adMobAndroidApplicationId": {
+            "name": "adMobAndroidApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-XXXXXXXXXXXXXXX~YYYYYYYYYY"
+        },
+        "adMobIOSApplicationId": {
+            "name": "adMobIOSApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-XXXXXXXXXXXXXXX~YYYYYYYYYY"
+        }
+    },
+    "repositories": [],
+    "deployOptions": {}
+}

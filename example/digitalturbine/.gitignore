@@ -1,0 +1,8 @@
+bin-debug
+bin
+out
+*Distriqt*
+
+apm_packages 
+ane
+project-lock.apm

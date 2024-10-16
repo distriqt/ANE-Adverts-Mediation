@@ -1,0 +1,41 @@
+{
+    "identifier": "com.distriqt.test",
+    "name": "TestMintegral",
+    "filename": "TestMintegral",
+    "version": "0.0.1",
+    "versionLabel": "",
+    "platforms": [],
+    "dependencies": [
+        {
+            "version": "16.8.610",
+            "id": "com.distriqt.admob.Mintegral",
+            "source": "file"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui_MetalWorksMobileTheme"
+        },
+        {
+            "version": "2.7.0",
+            "id": "starling"
+        }
+    ],
+    "configuration": {
+        "adMobAndroidApplicationId": {
+            "name": "adMobAndroidApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-XXXXXXXXXXXXXXX~YYYYYYYYYY"
+        },
+        "adMobIOSApplicationId": {
+            "name": "adMobIOSApplicationId",
+            "required": "true",
+            "value": "ca-app-pub-XXXXXXXXXXXXXXX~YYYYYYYYYY"
+        }
+    },
+    "repositories": [],
+    "deployOptions": {}
+}
