@@ -2,4 +2,4 @@
 
 | Extension | Version | Android Lib | iOS Lib |
 | --- | --- | --- | --- |
-| com.distriqt.admob.DigitalTurbine | 8.3.100 | 8.3.1 | 0.0.0 |
+| com.distriqt.admob.DigitalTurbine | 9.0.0 | 8.3.1 | 8.3.3 |

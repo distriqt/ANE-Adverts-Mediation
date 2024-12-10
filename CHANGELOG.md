@@ -1,3 +1,23 @@
+###### 2024.12.10 [v8.0.0]
+
+```
+## Major update 
+
+In this update we have moved all the extensions to use the newer gradle dependencies process. 
+
+See the migration guide: https://docs.airnativeextensions.com/docs/adverts/migrating-to-version-16.0
+
+
+feat(android): update to use new gradle dependencies
+feat(applovin): update applovin sdk: ios v13.0.1
+feat(digitalturbine): update digitalturbine sdk: ios v8.3.3
+feat(facebookaudience): update facebookaudience sdk: ios v6.16.0
+feat(ironsource): update ironsource sdk: ios v8.5.0.0
+feat(mintegral): update mintegral sdk: ios v7.7.3
+feat(pangle): update pangle sdk: ios v6.3.1.0
+feat(unityads): update unityads sdk: ios v4.12.5
+```
+
 ###### 2024.10.16 [v7.2.0]
 
 ```
