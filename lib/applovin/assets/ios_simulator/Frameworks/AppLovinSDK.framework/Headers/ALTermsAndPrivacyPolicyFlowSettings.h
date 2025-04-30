@@ -36,6 +36,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) NSURL *termsOfServiceURL;
 
 /**
+ * Set this to @c YES to show the Terms and Privacy Policy alert in GDPR regions prior to presenting the CMP prompt. The alert will show in non-GDPR regions regardless of this setting.
+ *
+ * This defaults to @c NO.
+ */
+@property (nonatomic, assign, getter=shouldShowTermsAndPrivacyPolicyAlertInGDPR) BOOL showTermsAndPrivacyPolicyAlertInGDPR;
+
+/**
  * Set debug user geography. You may use this to test CMP flow by setting this to @c ALConsentFlowUserGeographyGDPR.
  *
  * The flow would only be shown to new users. If you wish to test the flow after completing the CMP prompt, you would need to delete and re-install the app.

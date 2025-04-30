@@ -2,4 +2,4 @@
 
 | Extension | Version | Android Lib | iOS Lib |
 | --- | --- | --- | --- |
-| com.distriqt.admob.IronSource | 9.0.0 | 8.4.0 | 8.5.0 |
+| com.distriqt.admob.IronSource | 9.1.0 | 8.8.0 | 8.8.0 |

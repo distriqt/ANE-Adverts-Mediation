@@ -1,18 +1,8 @@
 /**
- *        __       __               __ 
- *   ____/ /_ ____/ /______ _ ___  / /_
- *  / __  / / ___/ __/ ___/ / __ `/ __/
- * / /_/ / (__  ) / / /  / / /_/ / / 
- * \__,_/_/____/_/ /_/  /_/\__, /_/ 
- *                           / / 
- *                           \/ 
- * https://distriqt.com
- *
  * @file   		Main.as
  * @brief  		
  * @author 		Michael Archbold (https://github.com/marchbold)
  * @created		08/01/2016
- * @copyright	https://distriqt.com/copyright/license.txt
  */
 package com.distriqt.test.tapjoy
 {

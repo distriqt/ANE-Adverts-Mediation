@@ -2,4 +2,4 @@
 
 | Extension | Version | Android Lib | iOS Lib |
 | --- | --- | --- | --- |
-| com.distriqt.admob.Mintegral | 17.0.0 | 16.8.61 | 7.7.3 |
+| com.distriqt.admob.Mintegral | 17.1.0 | 16.9.61 | 7.7.7 |

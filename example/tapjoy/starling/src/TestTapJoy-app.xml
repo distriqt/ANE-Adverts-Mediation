@@ -61,6 +61,8 @@
     </iPhone>
 
     <android>
+        <gradleVersion>8.9</gradleVersion>
+        <androidGradlePluginVersion>8.7.3</androidGradlePluginVersion>
         <manifestAdditions><![CDATA[
 <manifest android:installLocation="auto" >
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34"/>

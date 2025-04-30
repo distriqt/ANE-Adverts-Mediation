@@ -1,3 +1,16 @@
+###### 2025.04.30 [v8.1.0]
+
+```
+feat(applovin): update applovin sdk: android v13.2.0, ios v13.2.0
+feat(digitalturbine): update digitalturbine sdk: android v8.3.7, ios v8.3.7 (resolves https://github.com/distriqt/ANE-Adverts-Mediation/issues/81)
+feat(facebookaudience): update fb audience sdk: android v6.19.0, ios v6.17.1
+feat(ironsource): update ironsource sdk: android v8.8.0, ios v8.8.0 (resolves https://github.com/distriqt/ANE-Adverts/issues/605)
+feat(mintegral): update mintegral sdk: android v16.9.61, ios v7.7.7
+feat(pangle): update pangle sdk: android v6.5.0.8, ios v6.5.0.9 (resolves https://github.com/distriqt/ANE-Adverts-Mediation/issues/78)
+feat(unityads): update unity sdk: android v4.14.2, ios v4.14.2
+feat(vungle): update vungle sdk: android v7.4.3, ios v7.4.5 (https://github.com/distriqt/ANE-Adverts-Mediation/issues/80)
+```
+
 ###### 2024.12.10 [v8.0.0]
 
 ```
