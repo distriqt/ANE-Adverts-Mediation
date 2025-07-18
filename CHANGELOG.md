@@ -1,3 +1,9 @@
+###### 2025.07.18 [v8.1.1]
+
+```
+feat(airpackage): add platforms configuration
+```
+
 ###### 2025.04.30 [v8.1.0]
 
 ```

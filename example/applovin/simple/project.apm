@@ -7,12 +7,112 @@
     "platforms": [],
     "dependencies": [
         {
-            "version": "12.5.0",
+            "version": "14.2.0",
             "id": "com.distriqt.admob.AppLovin"
         },
         {
-            "version": "5.2.0",
+            "version": "7.1.0",
+            "id": "com.distriqt.admob.FacebookAudience"
+        },
+        {
+            "version": "7.1.0",
+            "id": "com.distriqt.admob.Pangle"
+        },
+        {
+            "version": "5.1.0",
+            "id": "com.distriqt.admob.UnityAds"
+        },
+        {
+            "version": "16.1.0",
+            "id": "com.distriqt.Adverts"
+        },
+        {
+            "version": "2.3.0",
+            "id": "com.distriqt.AppleSignIn"
+        },
+        {
+            "version": "8.0.0",
+            "id": "com.distriqt.Application"
+        },
+        {
+            "version": "7.0.1",
+            "id": "com.distriqt.ApplicationRater"
+        },
+        {
+            "version": "18.0.0",
+            "id": "com.distriqt.facebook.Core"
+        },
+        {
+            "version": "18.0.0",
+            "id": "com.distriqt.facebook.GamingServices"
+        },
+        {
+            "version": "18.0.0",
+            "id": "com.distriqt.facebook.Login"
+        },
+        {
+            "version": "18.0.0",
+            "id": "com.distriqt.facebook.Share"
+        },
+        {
+            "version": "10.1.0",
+            "id": "com.distriqt.Firebase"
+        },
+        {
+            "version": "10.1.0",
+            "id": "com.distriqt.firebase.Crashlytics"
+        },
+        {
+            "version": "10.1.0",
+            "id": "com.distriqt.firebase.DynamicLinks"
+        },
+        {
+            "version": "10.1.0",
+            "id": "com.distriqt.firebase.Performance"
+        },
+        {
+            "version": "10.1.0",
+            "id": "com.distriqt.firebase.RemoteConfig"
+        },
+        {
+            "version": "10.0.0",
+            "id": "com.distriqt.GameServices"
+        },
+        {
+            "version": "7.0.1",
+            "id": "com.distriqt.GoogleIdentity"
+        },
+        {
+            "version": "6.0.0",
             "id": "com.distriqt.IDFA"
+        },
+        {
+            "version": "16.1.2",
+            "id": "com.distriqt.InAppBilling"
+        },
+        {
+            "version": "3.0.1",
+            "id": "com.distriqt.InAppUpdates"
+        },
+        {
+            "version": "8.0.0",
+            "id": "com.distriqt.NativeWebView"
+        },
+        {
+            "version": "16.0.2",
+            "id": "com.distriqt.PushNotifications-FCM"
+        },
+        {
+            "version": "8.0.0",
+            "id": "com.distriqt.Share"
+        },
+        {
+            "version": "5.4.2",
+            "id": "com.distriqt.Vibration"
+        },
+        {
+            "version": "13.0.0",
+            "id": "com.singular"
         },
         {
             "version": "4.1.1",
@@ -31,7 +131,7 @@
         "adMobAndroidApplicationId": {
             "name": "adMobAndroidApplicationId",
             "required": "true",
-            "value": "ca-app-pub-2896211184606369~2324641339"
+            "value": "ca-app-pub-4920614350579341~9792560518"
         },
         "adMobIOSApplicationId": {
             "name": "adMobIOSApplicationId",
@@ -41,12 +141,82 @@
         "applovinAndroidSdkKey": {
             "name": "applovinAndroidSdkKey",
             "required": "true",
-            "value": "XXXXXXXXX"
+            "value": "7_XdsOLUFwg14rJDtp2CT1uvT1uRGHfOHB07aMcqHIsL7AZ-zcAVd3OB5HcLZHlrTmz26atOtkk-uIzrv8LXCl"
         },
         "applovinIOSSdkKey": {
             "name": "applovinIOSSdkKey",
             "required": "true",
-            "value": "XXXXXXXXX"
+            "value": "7_XdsOLUFwg14rJDtp2CT1uvT1uRGHfOHB07aMcqHIsL7AZ-zcAVd3OB5HcLZHlrTmz26atOtkk-uIzrv8LXCl"
+        },
+        "apsEnvironment": {
+            "name": "apsEnvironment",
+            "required": "true",
+            "value": "development"
+        },
+        "bundleSeedId": {
+            "name": "bundleSeedId",
+            "required": "true",
+            "value": "X5LW23Q6CJ"
+        },
+        "facebookAdvertiserIDCollectionEnabled": {
+            "name": "facebookAdvertiserIDCollectionEnabled",
+            "required": "false",
+            "value": "true"
+        },
+        "facebookAppId": {
+            "name": "facebookAppId",
+            "required": "true",
+            "value": "1879447352273895"
+        },
+        "facebookAutoInitEnabled": {
+            "name": "facebookAutoInitEnabled",
+            "required": "false",
+            "value": "false"
+        },
+        "facebookAutoLogAppEventsEnabled": {
+            "name": "facebookAutoLogAppEventsEnabled",
+            "required": "false",
+            "value": "true"
+        },
+        "facebookClientToken": {
+            "name": "facebookClientToken",
+            "required": "true",
+            "value": "084afd645df3bf59b049f78b6c6f0370"
+        },
+        "facebookDisplayName": {
+            "name": "facebookDisplayName",
+            "required": "true",
+            "value": "distriqt test application"
+        },
+        "getTaskAllow": {
+            "name": "getTaskAllow",
+            "required": "true",
+            "value": "false"
+        },
+        "googleIOSOAuthClientId": {
+            "name": "googleIOSOAuthClientId",
+            "required": "true",
+            "value": "616489336300-11jtfbdshdgdgs0gi36vicf7m7o02cqi.apps.googleusercontent.com"
+        },
+        "googleIOSURLScheme": {
+            "name": "googleIOSURLScheme",
+            "required": "true",
+            "value": "com.googleusercontent.apps.616489336300-11jtfbdshdgdgs0gi36vicf7m7o02cqi"
+        },
+        "photoLibraryAddUsageDescription": {
+            "name": "photoLibraryAddUsageDescription",
+            "required": "true",
+            "value": "Access to photo library is required to save images and videos."
+        },
+        "photoLibraryUsageDescription": {
+            "name": "photoLibraryUsageDescription",
+            "required": "true",
+            "value": "Access to photo library is required to save images and videos."
+        },
+        "playGamesAppId": {
+            "name": "playGamesAppId",
+            "required": "true",
+            "value": "628555043822"
         },
         "userTrackingUsageDescription": {
             "name": "userTrackingUsageDescription",
@@ -54,20 +224,20 @@
             "value": "Allows us to deliver personalized ads for you."
         }
     },
-    "repositories": [],
-    "deployOptions": {},
     "buildTypes": {
-        "ios-debug": {
-            "identifier": "com.distriqt.test",
-            "configuration": {
-                "apsEnvironment": "development"
-            }
-        },
         "android-debug": {
             "identifier": "com.distriqt.test.debug",
             "configuration": {
                 "apsEnvironment": "development"
             }
+        },
+        "ios-debug": {
+            "identifier": "com.distriqt.test",
+            "configuration": {
+                "apsEnvironment": "development"
+            }
         }
-    }
+    },
+    "repositories": [],
+    "deployOptions": {}
 }
