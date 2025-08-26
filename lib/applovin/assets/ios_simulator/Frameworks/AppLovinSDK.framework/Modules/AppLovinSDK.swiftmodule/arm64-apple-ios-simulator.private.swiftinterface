@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AppLovinSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AppLovinSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import AppLovinSDK
 import Foundation
+import StoreKit
 import Swift
 import _Concurrency
 import _StringProcessing
@@ -105,6 +106,7 @@ extension AppLovinSDK.ALMediationAdapter {
   public func log(signalEvent: AppLovinSDK.LogEvent.Signal, appending suffix: Swift.String = "")
   public func log(adEvent: AppLovinSDK.LogEvent.Ad, id: Swift.String? = nil, adFormat: AppLovinSDK.MAAdFormat, appending suffix: Swift.String = "")
 }
+postfix operator ~
 extension Swift.String {
   public var formattedValueLog: Swift.String {
     get

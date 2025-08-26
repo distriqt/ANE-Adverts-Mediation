@@ -1,9 +1,19 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AppLovinSDK",
+    "printedName": "AppLovinSDK",
     "children": [
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "AppLovinSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
       {
         "kind": "TypeDecl",
         "name": "AdapterDelegate",
@@ -288,7 +298,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -312,7 +322,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MAAdapterResponseParameters",
-                    "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                    "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                     "usr": "c:objc(pl)MAAdapterResponseParameters"
                   }
                 ],
@@ -669,6 +679,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -749,13 +773,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAInterstitialAdapterDelegate",
-                "printedName": "AppLovinSDK.MAInterstitialAdapterDelegate",
+                "printedName": "any AppLovinSDK.MAInterstitialAdapterDelegate",
                 "usr": "c:objc(pl)MAInterstitialAdapterDelegate"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -784,10 +808,24 @@
         "superclassUsr": "s:11AppLovinSDK15AdapterDelegateC",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "AppLovinSDK.AdapterDelegate<τ_0_0, AppLovinSDK.MAInterstitialAdapterDelegate>",
+          "AppLovinSDK.AdapterDelegate<τ_0_0, any AppLovinSDK.MAInterstitialAdapterDelegate>",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -870,13 +908,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAppOpenAdapterDelegate",
-                "printedName": "AppLovinSDK.MAAppOpenAdapterDelegate",
+                "printedName": "any AppLovinSDK.MAAppOpenAdapterDelegate",
                 "usr": "c:objc(pl)MAAppOpenAdapterDelegate"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -905,10 +943,24 @@
         "superclassUsr": "s:11AppLovinSDK15AdapterDelegateC",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "AppLovinSDK.AdapterDelegate<τ_0_0, AppLovinSDK.MAAppOpenAdapterDelegate>",
+          "AppLovinSDK.AdapterDelegate<τ_0_0, any AppLovinSDK.MAAppOpenAdapterDelegate>",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1038,13 +1090,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MARewardedAdapterDelegate",
-                "printedName": "AppLovinSDK.MARewardedAdapterDelegate",
+                "printedName": "any AppLovinSDK.MARewardedAdapterDelegate",
                 "usr": "c:objc(pl)MARewardedAdapterDelegate"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -1095,10 +1147,24 @@
         "superclassUsr": "s:11AppLovinSDK15AdapterDelegateC",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "AppLovinSDK.AdapterDelegate<τ_0_0, AppLovinSDK.MARewardedAdapterDelegate>",
+          "AppLovinSDK.AdapterDelegate<τ_0_0, any AppLovinSDK.MARewardedAdapterDelegate>",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1181,7 +1247,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdViewAdapterDelegate",
-                "printedName": "AppLovinSDK.MAAdViewAdapterDelegate",
+                "printedName": "any AppLovinSDK.MAAdViewAdapterDelegate",
                 "usr": "c:objc(pl)MAAdViewAdapterDelegate"
               },
               {
@@ -1193,7 +1259,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -1224,10 +1290,24 @@
         "superclassUsr": "s:11AppLovinSDK15AdapterDelegateC",
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "AppLovinSDK.AdapterDelegate<τ_0_0, AppLovinSDK.MAAdViewAdapterDelegate>",
+          "AppLovinSDK.AdapterDelegate<τ_0_0, any AppLovinSDK.MAAdViewAdapterDelegate>",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1376,7 +1456,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdViewAdapterDelegate",
-                "printedName": "AppLovinSDK.MAAdViewAdapterDelegate",
+                "printedName": "any AppLovinSDK.MAAdViewAdapterDelegate",
                 "usr": "c:objc(pl)MAAdViewAdapterDelegate"
               },
               {
@@ -1388,7 +1468,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -1420,10 +1500,24 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "AppLovinSDK.AdViewAdapterDelegate<τ_0_0>",
-          "AppLovinSDK.AdapterDelegate<τ_0_0, AppLovinSDK.MAAdViewAdapterDelegate>",
+          "AppLovinSDK.AdapterDelegate<τ_0_0, any AppLovinSDK.MAAdViewAdapterDelegate>",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1572,13 +1666,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MANativeAdAdapterDelegate",
-                "printedName": "AppLovinSDK.MANativeAdAdapterDelegate",
+                "printedName": "any AppLovinSDK.MANativeAdAdapterDelegate",
                 "usr": "c:objc(pl)MANativeAdAdapterDelegate"
               },
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -1607,10 +1701,24 @@
         "superclassUsr": "s:11AppLovinSDK15AdapterDelegateC",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "AppLovinSDK.AdapterDelegate<τ_0_0, AppLovinSDK.MANativeAdAdapterDelegate>",
+          "AppLovinSDK.AdapterDelegate<τ_0_0, any AppLovinSDK.MANativeAdAdapterDelegate>",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1984,6 +2092,22 @@
             "moduleName": "AppLovinSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2137,6 +2261,22 @@
             "moduleName": "AppLovinSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -3178,6 +3318,22 @@
             "moduleName": "AppLovinSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           }
         ],
@@ -3188,6 +3344,42 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "AppLovinSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "OperatorDecl",
+        "name": "~",
+        "printedName": "~",
+        "declKind": "PostfixOperator",
+        "moduleName": "AppLovinSDK",
+        "declAttributes": [
+          "Postfix"
         ]
       },
       {
@@ -3209,7 +3401,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MAAdapterResponseParameters",
-                "printedName": "AppLovinSDK.MAAdapterResponseParameters",
+                "printedName": "any AppLovinSDK.MAAdapterResponseParameters",
                 "usr": "c:objc(pl)MAAdapterResponseParameters"
               }
             ],
@@ -3412,6 +3604,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3550,10 +3756,25 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4129,10 +4350,25 @@
         "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
         "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -4491,6 +4727,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -4518,45 +4768,10 @@
     },
     {
       "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/AdapterDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 115,
-      "length": 15,
-      "value": "\"AppLovinSDK.AdapterDelegate\""
-    },
-    {
-      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/AdapterDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 1971,
-      "length": 27,
-      "value": "\"AppLovinSDK.InterstitialAdapterDelegate\""
-    },
-    {
-      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/AdapterDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 2374,
-      "length": 22,
-      "value": "\"AppLovinSDK.AppOpenAdapterDelegate\""
-    },
-    {
-      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/AdapterDelegate.swift",
       "kind": "BooleanLiteral",
       "offset": 2900,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/AdapterDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 2757,
-      "length": 23,
-      "value": "\"AppLovinSDK.RewardedAdapterDelegate\""
-    },
-    {
-      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/AdapterDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 4198,
-      "length": 23,
-      "value": "\"AppLovinSDK.NativeAdAdapterDelegate\""
     },
     {
       "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/ALMediationAdapter+Log.swift",
@@ -4582,6 +4797,13 @@
     {
       "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/ALMediationAdapter+Log.swift",
       "kind": "StringLiteral",
+      "offset": 1958,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/ALMediationAdapter+Log.swift",
+      "kind": "StringLiteral",
       "offset": 2486,
       "length": 2,
       "value": "\"\""
@@ -4597,6 +4819,41 @@
       "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Public\/ALMediationAdapter+Log.swift",
       "kind": "StringLiteral",
       "offset": 3938,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Private\/StoreKitAppTransaction.swift",
+      "kind": "StringLiteral",
+      "offset": 2659,
+      "length": 18,
+      "value": "\"appTransactionID\""
+    },
+    {
+      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Private\/StoreKitAppTransaction.swift",
+      "kind": "StringLiteral",
+      "offset": 2728,
+      "length": 24,
+      "value": "\"mirror_label_not_found\""
+    },
+    {
+      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Private\/StoreKitAppTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2883,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Private\/StoreKitAppTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3155,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/usr\/local\/var\/jenkins\/workspace\/Mobile-iOS-SDK\/SDK-iOS\/iOS-SDK\/sdk\/Private\/StoreKitAppTransaction.swift",
+      "kind": "StringLiteral",
+      "offset": 4550,
       "length": 2,
       "value": "\"\""
     }

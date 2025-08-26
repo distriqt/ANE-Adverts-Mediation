@@ -2,4 +2,4 @@
 
 | Extension | Version | Android Lib | iOS Lib |
 | --- | --- | --- | --- |
-| com.distriqt.admob.UnityAds | 5.1.1 | 4.14.2 | 4.14.2 |
+| com.distriqt.admob.UnityAds | 5.16.1 | 4.16.0 | 4.16.1 |

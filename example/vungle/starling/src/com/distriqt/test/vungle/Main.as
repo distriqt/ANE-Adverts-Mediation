@@ -69,7 +69,7 @@ package com.distriqt.test.vungle
 		{
 			var tf:TextFormat = new TextFormat( "_typewriter", 12, Color.WHITE, HorizontalAlign.LEFT, VerticalAlign.TOP );
 			_text = new TextField( stage.stageWidth, stage.stageHeight, "", tf );
-			_text.y = 40;
+			_text.y = 100;
 			_text.touchable = false;
 			
 			var layout:VerticalLayout = new VerticalLayout();
@@ -78,10 +78,10 @@ package com.distriqt.test.vungle
 			layout.gap = 5;
 			
 			_container = new ScrollContainer();
-			_container.y = 40;
+			_container.y = 100;
 			_container.layout = layout;
 			_container.width = stage.stageWidth;
-			_container.height = stage.stageHeight-40;
+			_container.height = stage.stageHeight-200;
 			
 			
 			_tests = new VungleTests( this );

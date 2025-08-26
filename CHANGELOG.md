@@ -1,3 +1,16 @@
+###### 2025.08.26 [v9.0.0]
+
+```
+feat(applovin): update applovin sdk: android v13.3.1, ios v13.3.1
+feat(digitalturbine): update digitalturbine sdk: android v8.3.8, ios v8.3.8
+feat(facebookaudience): update facebookaudience sdk: android v6.20.0, ios v6.20.1
+feat(ironsource): update ironsource sdk: android v8.10.0, ios v8.10.0
+feat(mintegral): update mintegral sdk: android v16.9.91, ios v7.7.9
+feat(pangle): update pangle sdk: android v7.5.0.2, ios v7.5.0.5
+feat(unityads): update unityads sdk: android v4.16.0, ios v4.16.1
+feat(vungle): update vungle sdk: android v7.5.1, ios v7.5.3
+```
+
 ###### 2025.07.18 [v8.1.1]
 
 ```
