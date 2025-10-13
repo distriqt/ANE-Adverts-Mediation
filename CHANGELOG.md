@@ -1,3 +1,9 @@
+###### 2025.10.13 [v9.0.1]
+
+```
+fix(ironsource,airpackage): correct android minimum sdk version (resolves https://github.com/distriqt/ANE-Adverts/issues/640)
+```
+
 ###### 2025.08.26 [v9.0.0]
 
 ```
