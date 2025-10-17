@@ -77,19 +77,20 @@ package com.distriqt.test.pangle
 			var layout:VerticalLayout = new VerticalLayout();
 			layout.horizontalAlign = HorizontalAlign.RIGHT;
 			layout.verticalAlign = VerticalAlign.BOTTOM;
+			layout.padding = 50;
 			layout.gap = 5;
 			
 			_container = new ScrollContainer();
-			_container.y = 100;
 			_container.layout = layout;
 			_container.width = stage.stageWidth;
-			_container.height = stage.stageHeight-200;
+			_container.height = stage.stageHeight;
 			
 			
 			_tests = new PangleTests( this );
 
-			
-			
+			addAction( "consent :GDPR", _tests.consentGDPR );
+			addAction( "consent :CCPA", _tests.consentPA );
+
 			addChild( _tests );
 			addChild( _text );
 			addChild( _container );

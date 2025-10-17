@@ -1,3 +1,16 @@
+###### 2025.10.17 [v9.1.0]
+
+```
+feat(applovin): update applovin sdk: android v13.4.0, ios v13.4.0 (https://github.com/distriqt/ANE-Adverts-mediation/issues/88, https://github.com/distriqt/ANE-Adverts-mediation/issues/90)
+feat(digitalturbine): update digitalturbine sdk: android v8.4.0
+feat(facebookaudience): update facebookaudience sdk: android v6.20.0.1
+feat(ironsource): update ironsource sdk: android v9.0.0, ios v9.0.0
+feat(pangle): update pangle sdk: android v7.6.0.4, ios v7.6.0.6
+feat(pangle): add GDPR and CCPA consent functions
+feat(unityads): update unityads sdk: android v4.16.2, ios v4.16.2
+feat(vungle): update vungle sdk: ios v7.6.0
+```
+
 ###### 2025.10.13 [v9.0.1]
 
 ```

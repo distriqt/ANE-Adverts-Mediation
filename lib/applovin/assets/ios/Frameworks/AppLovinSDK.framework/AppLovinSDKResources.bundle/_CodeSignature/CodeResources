@@ -52,13 +52,9 @@
 		<data>
 		8h9oVqkvdECBLXJpt/XR2b4XKcQ=
 		</data>
-		<key>MANativeAdMediumTemplate1.nib</key>
+		<key>MANativeAdTemplate1.nib</key>
 		<data>
-		JSPAJ+qqDHArQPPIRyt0a79Im7c=
-		</data>
-		<key>MANativeAdSmallTemplate1.nib</key>
-		<data>
-		g9B+CRz+6arjXe59t8i2fb35dbE=
+		abrjqwEJqQNI+2hLfA22r1hQ/iM=
 		</data>
 		<key>MANativeAdVerticalBannerView.nib</key>
 		<data>
@@ -291,26 +287,15 @@
 			5as5tn265qeA8rm0pCgrn/LZoJpb/o/xhEmCk1ozH7I=
 			</data>
 		</dict>
-		<key>MANativeAdMediumTemplate1.nib</key>
+		<key>MANativeAdTemplate1.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JSPAJ+qqDHArQPPIRyt0a79Im7c=
+			abrjqwEJqQNI+2hLfA22r1hQ/iM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OJ+RQWr2V+mfqe2CDPIsysgLxic/qCDIlOyf0ZVUXSI=
-			</data>
-		</dict>
-		<key>MANativeAdSmallTemplate1.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g9B+CRz+6arjXe59t8i2fb35dbE=
-			</data>
-			<key>hash2</key>
-			<data>
-			orSAEKNkPyklTYnt+XruYp6/o8LM0Y5hzmQwem9/azY=
+			y35JmtpS2K0aAQzYk4JnA90cZABzHfBGonvZ1m3E4ic=
 			</data>
 		</dict>
 		<key>MANativeAdVerticalBannerView.nib</key>

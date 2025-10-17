@@ -61,5 +61,24 @@ package com.distriqt.test.pangle
 		//
 
 
+		public function consentGDPR():void
+		{
+			if (AdMobPangle.isSupported)
+			{
+				AdMobPangle.instance.setGDPRConsent( true );
+				log( "Set GDPR Consent to true" );
+			}
+		}
+
+
+		public function consentPA():void
+		{
+			if (AdMobPangle.isSupported)
+			{
+				AdMobPangle.instance.setPAConsent( true );
+				log( "Set PA Consent to true" );
+			}
+		}
+
 	}
 }

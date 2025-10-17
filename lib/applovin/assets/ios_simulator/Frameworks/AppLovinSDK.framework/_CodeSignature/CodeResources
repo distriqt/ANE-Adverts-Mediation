@@ -61,13 +61,9 @@
 		<data>
 		8h9oVqkvdECBLXJpt/XR2b4XKcQ=
 		</data>
-		<key>AppLovinSDKResources.bundle/MANativeAdMediumTemplate1.nib</key>
+		<key>AppLovinSDKResources.bundle/MANativeAdTemplate1.nib</key>
 		<data>
-		JSPAJ+qqDHArQPPIRyt0a79Im7c=
-		</data>
-		<key>AppLovinSDKResources.bundle/MANativeAdSmallTemplate1.nib</key>
-		<data>
-		g9B+CRz+6arjXe59t8i2fb35dbE=
+		abrjqwEJqQNI+2hLfA22r1hQ/iM=
 		</data>
 		<key>AppLovinSDKResources.bundle/MANativeAdVerticalBannerView.nib</key>
 		<data>
@@ -87,7 +83,7 @@
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		zsCbrZJI3oHnSRhTJMoOIxmmLBg=
+		blbl+MnGvL8k1GxbHmgMtQFJjDM=
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -95,11 +91,11 @@
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		adhXw+/NdZ5d5pwKS0bn/c0NI0A=
+		DKTtwPDt/KnUwDi89gKk0r2ZOr0=
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		ciue0uQBec5T469xRNVxvhEhW78=
+		9SfFlFVM8Bzn9bxyCBnpHHgOw50=
 		</data>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -363,7 +359,7 @@
 		</data>
 		<key>Headers/MAAdPlacer.h</key>
 		<data>
-		mIFmJJvCjpnEOjC+2VRXNl6uhZw=
+		E6HXfBqyK5FFKdORMNUpVYL5cv4=
 		</data>
 		<key>Headers/MAAdPlacerSettings.h</key>
 		<data>
@@ -403,7 +399,7 @@
 		</data>
 		<key>Headers/MAAdWaterfallInfo.h</key>
 		<data>
-		m10PuziIiNi8cy0wMPn4fqGhorM=
+		EXRMsSaLnH6YxBWssCtyVLLdk0I=
 		</data>
 		<key>Headers/MAAdapter.h</key>
 		<data>
@@ -571,7 +567,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Lp1n9Ffp30IkMsyRAc+4PgN769s=
+		3tlFXfepjMxKVTu2ySKj43U/CAU=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -591,7 +587,7 @@
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7oc4O7g0DRCSr3sXPI8fDcj96hc=
+		nIPzLgkFClNSHyTb3I7zoF6pEXo=
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -611,7 +607,7 @@
 		</data>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3aqRRXljY/wfNFDUtwjw6uBM0bo=
+		gHHbpUd+/DfGeaoMLUvsHlulc3A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -717,18 +713,11 @@
 			5as5tn265qeA8rm0pCgrn/LZoJpb/o/xhEmCk1ozH7I=
 			</data>
 		</dict>
-		<key>AppLovinSDKResources.bundle/MANativeAdMediumTemplate1.nib</key>
+		<key>AppLovinSDKResources.bundle/MANativeAdTemplate1.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJ+RQWr2V+mfqe2CDPIsysgLxic/qCDIlOyf0ZVUXSI=
-			</data>
-		</dict>
-		<key>AppLovinSDKResources.bundle/MANativeAdSmallTemplate1.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			orSAEKNkPyklTYnt+XruYp6/o8LM0Y5hzmQwem9/azY=
+			y35JmtpS2K0aAQzYk4JnA90cZABzHfBGonvZ1m3E4ic=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/MANativeAdVerticalBannerView.nib</key>
@@ -763,7 +752,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VyCPDZEENisvR0nrFxs2fZQMq6vgaIt4tb4BFkAxncc=
+			7/Y7gisiux8amye/kL0I4+VFDNEB2TVbYA9jpJKtdwU=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -777,14 +766,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8pbDSw8eQdiVYms7FCJemKs1A5A0gdtazX95sG9itaY=
+			sFmyDgo+aTvR7UgU2UtKF44JULy3xFYncQ5dBt/yQRo=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UoZuhN1/HGfXsT6HGDuM7xqrDvcmV/dMsVEYwbGb+Lc=
+			XXP/x+ceRKdY6YOLbv0jRExo8gNfRRYmM3NJltAQ5qQ=
 			</data>
 		</dict>
 		<key>AppLovinSDKResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1192,7 +1181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BwGIPAqSbp/n+bxpNfJOlvRWckVRRe+TA2EzULvUI0U=
+			NzQsTfgjvlB8NPHLvoACul5bTnDtBiNDCUbj11I+LnA=
 			</data>
 		</dict>
 		<key>Headers/MAAdPlacerSettings.h</key>
@@ -1262,7 +1251,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZDcDWZivft5qeG3qtQvqpIeHFCFZKcqNMneN31fCOeM=
+			0tebgLZ+PXl6VhHu0BCI59D2VkxiY1vzF2qDVZSyVdY=
 			</data>
 		</dict>
 		<key>Headers/MAAdapter.h</key>
@@ -1584,7 +1573,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CpQi0aNqH5b3T+h+4x2w9RcsdSLyPGIW82JFBGfrmVw=
+			H6BDS9bxLphnYersaxjS5vL0pooWApr6qUn15Ommgs8=
 			</data>
 		</dict>
 		<key>Modules/AppLovinSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1619,7 +1608,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cy+3KFww/vWgAqXQnogHVSawqGjYRZqtIQUGwxcl/Vw=
+			BiwKIAEML29T3pABzds03X6L5ni7JT861JDT4pKFJ2I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
